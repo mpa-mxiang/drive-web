@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap"
-import { Link, useNavigate } from "react-router-dom"
-import { useUserAuth } from "../contexts/UserAuthContext";
-import Carousel from "react-elastic-carousel";
+import { useNavigate } from "react-router-dom"
 
-import { makeStyles } from "@material-ui/core/styles";
+//import { makeStyles } from "@material-ui/core/styles";
 
-
+/*
 const useStyles = makeStyles((theme) => ({
     root: {
         display: "flex",
@@ -22,55 +20,51 @@ const useStyles = makeStyles((theme) => ({
         margin: "20px auto",
     }
 }));
-
+*/
 
 const Home = () => {
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
     const [error, setError] = useState("");
 
 
-
-    const navigateToGroups = async () => {
-        try {
-            navigate("/YourGroups");
-            // navigate("./groupsCard");
-        } catch (err) {
-            setError(err.message);
+    /*
+        const navigateToGroups = async () => {
+            try {
+                navigate("/YourGroups");
+                // navigate("./groupsCard");
+            } catch (err) {
+                setError(err.message);
+            }
         }
-    }
+    */
 
-
-    const classes = useStyles();
+    //const classes = useStyles();
 
     return (
-        <>
-            <HeaderBar />
-
-            <div className="p-4 box my-3 text-center">
-                Hello Welcome <br />
-                {user && user.email}
-
-                <div className={classes.root}>
-                    <Wrapper />
-                    <CardWrapper />
-
-                    <div>
 
 
-                        <ReadMoreBtn style={{ margin: "50px" }} className={classes.viewBtn} onClick={navigateToGroups}>See Your Groups</ReadMoreBtn>
-                        <ReadMoreBtn style={{ margin: "50px" }} className={classes.viewBtn} onClick={navigateToTasks}>See Your Tasks</ReadMoreBtn>
-                        <ReadMoreBtn style={{ margin: "50px" }} className={classes.viewBtn}>Pick Your Pet</ReadMoreBtn>
-                        {/* <Link to="./GroupsPg/groupCard">See Your Groups</Link> */}
-                    </div>
+        <div className="p-4 box my-3 text-center">
+            Hello Welcome <br />
 
-                    <div>
-                        <Button variant="primary" onClick={handleLogOut}>Log out</Button>
-                    </div>
+
+            <div /*className={classes.root}*/>
+
+
+                <div>
+
+
+                    <Button style={{ margin: "50px" }} /*className={classes.viewBtn} onClick={ }*/>Packages and Prices</Button>
+                    <Button style={{ margin: "50px" }} /*className={classes.viewBtn} onClick={ }*/>Book Your Class</Button>
+                    <Button style={{ margin: "50px" }} /*className={classes.viewBtn}*/>Success Clients</Button>
 
                 </div>
 
+
+
             </div>
-        </>
+
+        </div>
+
 
     )
 }
