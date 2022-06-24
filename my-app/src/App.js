@@ -5,7 +5,7 @@ import "./App.css";
 import Calendar from "./Calendar"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-
+import Home from "./components/Home";
 function App() {
 
   return (
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <div><h1>Calendar</h1>
         <Routes>
-          <Route path="/Calendar"
+          <Route path="/Home"
             element={
               <Calendar />
             } />
