@@ -1,6 +1,8 @@
-import { Routes, Route } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
-//import { Container, Row, Col, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Container, Row, Col, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import Home from "./components/Home";
+
 import "./App.css";
 import Calendar from "./Calendar"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
