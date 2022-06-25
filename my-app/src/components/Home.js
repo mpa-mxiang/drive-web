@@ -23,19 +23,19 @@ const useStyles = makeStyles((theme) => ({
 */
 
 const Home = () => {
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   const [error, setError] = useState('');
 
-  /*
-        const navigateToGroups = async () => {
-            try {
-                navigate("/YourGroups");
-                // navigate("./groupsCard");
-            } catch (err) {
-                setError(err.message);
-            }
-        }
-    */
+
+  const navigateToCalendar = async () => {
+    try {
+      navigate("./Calendar");
+      // navigate("./groupsCard");
+    } catch (err) {
+      setError(err.message);
+    }
+  }
+
 
   //const classes = useStyles();
 
@@ -54,7 +54,7 @@ const Home = () => {
           <Button
             style={{
               margin: '50px',
-            }} /*className={classes.viewBtn} onClick={ }*/
+            }} /*className={classes.viewBtn}*/ onClick={navigateToCalendar}
           >
             Book Your Class
           </Button>
