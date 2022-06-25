@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Button } from "react-bootstrap"
-import { useNavigate } from "react-router-dom"
+import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 //import { makeStyles } from "@material-ui/core/styles";
 
@@ -23,11 +23,10 @@ const useStyles = makeStyles((theme) => ({
 */
 
 const Home = () => {
-    //const navigate = useNavigate();
-    const [error, setError] = useState("");
+  //const navigate = useNavigate();
+  const [error, setError] = useState('');
 
-
-    /*
+  /*
         const navigateToGroups = async () => {
             try {
                 navigate("/YourGroups");
@@ -38,35 +37,34 @@ const Home = () => {
         }
     */
 
-    //const classes = useStyles();
+  //const classes = useStyles();
 
-    return (
-
-
-        <div className="p-4 box my-3 text-center">
-            Hello Welcome <br />
-
-
-            <div /*className={classes.root}*/>
-
-
-                <div>
-
-
-                    <Button style={{ margin: "50px" }} /*className={classes.viewBtn} onClick={ }*/>Packages and Prices</Button>
-                    <Button style={{ margin: "50px" }} /*className={classes.viewBtn} onClick={ }*/>Book Your Class</Button>
-                    <Button style={{ margin: "50px" }} /*className={classes.viewBtn}*/>Success Clients</Button>
-
-                </div>
-
-
-
-            </div>
-
+  return (
+    <div className="p-4 box my-3 text-center">
+      Hello Welcome <br />
+      <div /*className={classes.root}*/>
+        <div>
+          <Button
+            style={{
+              margin: '50px',
+            }} /*className={classes.viewBtn} onClick={ }*/
+          >
+            Packages and Prices
+          </Button>
+          <Button
+            style={{
+              margin: '50px',
+            }} /*className={classes.viewBtn} onClick={ }*/
+          >
+            Book Your Class
+          </Button>
+          <Button style={{ margin: '50px' }} /*className={classes.viewBtn}*/>
+            Success Clients
+          </Button>
         </div>
-
-
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default Home;
