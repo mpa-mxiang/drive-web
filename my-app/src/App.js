@@ -6,7 +6,7 @@ import Calendar from './Calendar';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Home from './components/Home';
-
+import HeaderBar from "./HeaderBar";
 function App() {
   return (
     <div className="App">
