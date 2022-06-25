@@ -1,6 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container, Row, Col, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
+import Home from "./components/Home";
 /*
 import "./App.css";
 
@@ -19,9 +20,12 @@ import logo from "./logo.svg";
 */
 function App() {
   return (
-    <div>
-      <p>Hello World! nice nice</p>
-    </div>
+    <Router>
+      <Routes>
+      <Route index element={<Home />} />
+      </Routes>
+    </Router>
+
   );
 }
 export default App;
