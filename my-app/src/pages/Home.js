@@ -59,9 +59,9 @@ const Home = () => {
             Max's Driving School
           </h1>
           <br />
-          <h1>
+          <h2>
             Coaching with Confidence
-          </h1>
+          </h2>
           <Button
             onClick={navigateToPackage}>
             Packages and Prices

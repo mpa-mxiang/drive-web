@@ -14,15 +14,11 @@ const Packages = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Cost</td>
-            <td>650</td>
-            <td>850</td>
-          </tr>
+
           <tr>
             <td>Hours of in-car training</td>
             <td>10</td>
-            <td>13</td>
+            <td>10</td>
           </tr>
           <tr>
             <td>Hours of in-class teaching</td>
@@ -38,6 +34,16 @@ const Packages = () => {
             <td>Use of instructors Vehicle for road test</td>
             <td><HiXCircle /></td>
             <td><HiCheckCircle /></td>
+          </tr>
+          <tr>
+            <td>Practice before test</td>
+            <td><HiXCircle /></td>
+            <td><HiCheckCircle /></td>
+          </tr>
+          <tr>
+            <td>Cost</td>
+            <td>650</td>
+            <td>850</td>
           </tr>
         </tbody>
       </Table>
