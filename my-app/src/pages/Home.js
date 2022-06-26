@@ -58,7 +58,7 @@ const Home = () => {
           <h1>
             Max's Driving School
           </h1>
-            <br /> 
+          <br />
           <h1>
             Coaching with Confidence
           </h1>
@@ -66,13 +66,13 @@ const Home = () => {
             onClick={navigateToPackage}>
             Packages and Prices
           </Button>
-          
+
           <Button
             onClick={navigateToCalendar}>
             Book Your Class
           </Button>
-          
-          <Button 
+
+          <Button
             onClick={navigateToClients}>
             Success Clients
           </Button>
