@@ -16,7 +16,7 @@ function HeaderBar() {
                         <NavDropdown.Item href="groups/group1">Sliver</NavDropdown.Item>
                         <NavDropdown.Item href="groups/group2">Gold</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="book">Pet</Nav.Link>
+                    <Nav.Link href="book">Book Your Class</Nav.Link>
                     <Nav.Link href="success-clients">Success Clients</Nav.Link>
                     <Nav.Link href="more">More</Nav.Link>
                 </Nav>
