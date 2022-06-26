@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CalendarTemplate from 'availability-calendar-react';
+
 
 const Calendar = () => {
+    const [availability, setAvailability] = useState([])
+    const Calendar = CalendarTemplate({
+        availability,
+        setAvailability
+    })
     return (
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'Right',
-                alignItems: 'Right',
-                height: '100vh'
-            }}
-        >
-            <h1>Calendar</h1>
+        <div>
+
         </div>
     );
 };
