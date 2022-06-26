@@ -8,6 +8,7 @@ import {
     Range,
     CalendarThemeProp,
 } from 'react-availability-calendar';
+
 import moment from 'moment';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
