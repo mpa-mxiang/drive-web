@@ -7,32 +7,27 @@ import {
   NavBtn,
   NavBtnLink,
 } from './NavbarElements';
-import { Navbar, NavDropdown } from "react-bootstrap";
+import { NavDropdown } from "react-bootstrap";
+
 const Navbar = () => {
   return (
     <>
       <Nav>
-        <Navbar.Brand>
-          Max Driving School
-        </Navbar.Brand>
         <Bars />
 
         <NavMenu>
-          <NavLink to='/about' activeStyle>
+          <NavLink to='/about' style>
             About
           </NavLink>
           <NavDropdown title="Packages">
             <NavDropdown.Item href="groups/group1">Sliver</NavDropdown.Item>
             <NavDropdown.Item href="groups/group2">Gold</NavDropdown.Item>
           </NavDropdown>
-          <NavLink to='/book' activeStyle>
+          <NavLink to='/calendar' style>
             Book Your Class
           </NavLink>
-          <NavLink to='/clients' activeStyle>
+          <NavLink to='/clients' style>
             Success Clients
-          </NavLink>
-          <NavLink to='/blogs' activeStyle>
-            More
           </NavLink>
 
           {/* Second Nav */}

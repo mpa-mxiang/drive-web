@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Clients = () => {
+const Calendar = () => {
     return (
         <div
             style={{
@@ -15,4 +15,4 @@ const Clients = () => {
     );
 };
 
-export default Clients;
+export default Calendar;

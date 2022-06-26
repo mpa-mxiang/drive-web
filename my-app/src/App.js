@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 //import { Container, Row, Col, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import './App.css';
@@ -7,9 +7,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Home from './pages/Home';
 //import HeaderBar from "./HeaderBar";
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Index';
 import About from "./pages/About";
-import Book from "./pages/Calendar";
 import Clients from "./pages/Clients";
 import Packages from "./pages/Packages";
 function App() {
@@ -17,13 +16,13 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/calendar' component={Book} />
-          <Route path='/clients' component={Clients} />
-          <Route path='/packages' component={Packages} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/packages" element={<Packages />} />
+        </Routes>
       </Router>
     </div>
   );
