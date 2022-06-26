@@ -1,43 +1,41 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Container, Row, Col, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import React, { useEffect, useState } from 'react';
-import Home from "./components/Home";
+import { Container, Row, Col } from 'react-bootstrap';
+//import { Container, Row, Col, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import Home from './components/Home';
+import HeaderBar from "./HeaderBar";
+import Calendar from "./Calendar";
 
-import "./App.css";
-import Calendar from "./Calendar"
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
-import Home from "./components/Home";
 function App() {
-
   return (
-
     <div className="App">
-      <div><h1>Calendar</h1>
+      <Router>
         <Routes>
-          <Route path="/Home"
-            element={
-              <Home />
-            } />
-
-
-
+          <Route index element={<Home />} />
+          <Route path="/BookingCalendar" element={<Calendar />} />
         </Routes>
-
-      </div>;
-      <Container>
-        <Row>
-          <Col>
-            <Route path="/" element={<Calendar />} />
-
-          </Col>
-        </Row>
-      </Container>
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+/*
+      <Container>
+        <Row>
+          <Col>
+            <Router>
+              <Routes>
+                <Route path="/" element={<Calendar />} />
+              </Routes>
+            </Router>
+          </Col>
+        </Row>
+      </Container>
+    */
 
 /*
 import { Routes, Route } from "react-router-dom";
