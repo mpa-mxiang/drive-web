@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import './Home.css';
 
 //import { makeStyles } from "@material-ui/core/styles";
 
@@ -28,8 +29,21 @@ const Home = () => {
 
   const navigateToCalendar = async () => {
     try {
-      navigate('/BookingCalendar');
-      // navigate("./groupsCard");
+      navigate('/calendar');
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+  const navigateToPackage = async () => {
+    try {
+      navigate('/packages');
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+  const navigateToClients = async () => {
+    try {
+      navigate('/clients');
     } catch (err) {
       setError(err.message);
     }
@@ -39,27 +53,30 @@ const Home = () => {
 
   return (
     <div className="p-4 box my-3 text-center">
-      Hello Welcome <br />
-      <div /*className={classes.root}*/>
-        <div>
+      <div className="banner">
+        <div className="banner-info">
+          <h1>
+            Max's Driving School
+          </h1>
+            <br /> 
+          <h1>
+            Coaching with Confidence
+          </h1>
           <Button
-            style={{
-              margin: '50px',
-            }} /*className={classes.viewBtn} onClick={ }*/
-          >
+            onClick={navigateToPackage}>
             Packages and Prices
           </Button>
+          
           <Button
-            style={{
-              margin: '50px',
-            }}
-            /*className={classes.viewBtn}*/ onClick={navigateToCalendar}
-          >
+            onClick={navigateToCalendar}>
             Book Your Class
           </Button>
-          <Button style={{ margin: '50px' }} /*className={classes.viewBtn}*/>
+          
+          <Button 
+            onClick={navigateToClients}>
             Success Clients
           </Button>
+
         </div>
       </div>
     </div>

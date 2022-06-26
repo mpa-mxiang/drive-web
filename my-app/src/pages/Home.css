@@ -1,0 +1,31 @@
+.banner{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('https://images.pexels.com/photos/1424246/pexels-photo-1424246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center center;
+}
+.banner .banner-info{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  text-align: center;
+  line-height: 5.5rem;
+}
+.banner .banner-info h1{
+  position: relative;
+  font-size: 3.8rem;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.banner .banner-info Button{
+  margin: 50px;
+  border-radius: 10px;
+  padding: 10px 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
