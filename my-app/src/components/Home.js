@@ -23,17 +23,7 @@ const useStyles = makeStyles((theme) => ({
 */
 
 const Home = () => {
-  const navigate = useNavigate();
-  const [error, setError] = useState('');
 
-  const navigateToCalendar = async () => {
-    try {
-      navigate('/BookingCalendar');
-      // navigate("./groupsCard");
-    } catch (err) {
-      setError(err.message);
-    }
-  };
 
   //const classes = useStyles();
 
@@ -52,8 +42,7 @@ const Home = () => {
           <Button
             style={{
               margin: '50px',
-            }}
-            /*className={classes.viewBtn}*/ onClick={navigateToCalendar}
+
           >
             Book Your Class
           </Button>
