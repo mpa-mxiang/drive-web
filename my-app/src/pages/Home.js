@@ -60,7 +60,7 @@ const Home = () => {
           </h1>
           <br />
           <h2>
-            Coaching with Confidence
+            Serving the community to provide a customized lesson plan to ensure you are a safe and capable driver
           </h2>
           <Button
             onClick={navigateToPackage}>
