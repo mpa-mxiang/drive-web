@@ -62,6 +62,9 @@ const Home = () => {
           <h2>
             Serving the community to provide a customized lesson plan to ensure you are a safe and capable driver
           </h2>
+          <h2>
+            Call +1(226)972-6161 for more details
+          </h2>
           <Button
             onClick={navigateToPackage}>
             Packages and Prices
@@ -79,7 +82,11 @@ const Home = () => {
 
         </div>
       </div>
+      <div className="container">
+
+      </div>
     </div>
+
   );
 };
 
