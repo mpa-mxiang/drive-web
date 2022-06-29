@@ -22,6 +22,9 @@ const Navbar = () => {
           <NavLink to="/clients" style>
             Success Clients
           </NavLink>
+          <NavLink to="/register" style>
+            Register
+          </NavLink>
         </NavMenu>
       </Nav>
     </>

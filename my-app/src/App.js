@@ -11,6 +11,7 @@ import Navbar from './components/Navbar/Index';
 import About from "./pages/About";
 import Clients from "./pages/Clients";
 import Packages from "./pages/Packages";
+import Register from "./pages/Register";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/packages" element={<Packages />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </div>
