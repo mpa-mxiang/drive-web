@@ -8,13 +8,12 @@ import Scheduler, {
 import moment from "moment";
 import "moment/locale/fr";
 import Datas from "./Datas";
-import Paypal from "./Paypal";
 import withDragDropContext from "./withDnDContext";
 import "react-big-scheduler/lib/css/style.css";
 import Col from "antd/lib/col";
 import Row from "antd/lib/row";
 
-class Booking extends Component {
+class Calendar extends Component {
     constructor(props) {
         super(props);
 
@@ -122,7 +121,7 @@ class Booking extends Component {
                 <Row type="flex" align="middle">
                     {eventItem.bgColor === "green" ? (
                         <div className="payment-div">
-                            <Paypal />
+                            <h1>You booked successfully!</h1>
                         </div>
                     ) : (
                         <div></div>
