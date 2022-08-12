@@ -1,3 +1,4 @@
+/*
 import React, { Component, useState } from "react";
 import { PropTypes } from "prop-types";
 import Scheduler, {
@@ -200,3 +201,4 @@ class Calendar extends Component {
 export default withDragDropContext(Calendar);
 
 
+*/

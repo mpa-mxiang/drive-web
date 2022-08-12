@@ -7,7 +7,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Home from './pages/Home';
 //import HeaderBar from "./HeaderBar";
-import Navbar from './components/Navbar/index';
+import Navbar from './components/Navbar/Index';
 import About from "./pages/About";
 import Clients from "./pages/Clients";
 import Packages from "./pages/Packages";
