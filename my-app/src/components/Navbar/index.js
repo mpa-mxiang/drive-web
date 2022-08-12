@@ -6,9 +6,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <A href="/">
-          Max's Driving School
-        </A>
+        <A href="/">Max's Driving School</A>
         <NavMenu>
           <NavLink to="/about" style>
             About
@@ -16,14 +14,17 @@ const Navbar = () => {
           <NavLink to="/packages" style>
             Packages
           </NavLink>
-          <NavLink to="/calendar" style>
+          <NavLink
+            to="/calendar"
+            style={({ isActive }) => ({
+              color: isActive ? '#fff' : '#545e6f',
+              background: isActive ? '#7600dc' : '#f0f0f0',
+            })}
+          >
             Book Your Class
           </NavLink>
           <NavLink to="/clients" style>
             Success Clients
-          </NavLink>
-          <NavLink to="/register" style>
-            Register
           </NavLink>
         </NavMenu>
       </Nav>
