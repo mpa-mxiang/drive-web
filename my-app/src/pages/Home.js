@@ -32,6 +32,7 @@ const Home = () => {
       navigate('/calendar');
     } catch (err) {
       setError(err.message);
+      return { error };
     }
   };
   const navigateToPackage = async () => {
@@ -39,6 +40,7 @@ const Home = () => {
       navigate('/packages');
     } catch (err) {
       setError(err.message);
+      return { error };
     }
   };
   const navigateToClients = async () => {
@@ -46,47 +48,31 @@ const Home = () => {
       navigate('/clients');
     } catch (err) {
       setError(err.message);
+      return { error };
     }
   };
 
   //const classes = useStyles();
 
   return (
-    <div className="p-4 box my-3 text-center">
-      <div className="banner">
-        <div className="banner-info">
-          <h1>
-            Max's Driving School
-          </h1>
-          <br />
-          <h2>
-            Serving the community to provide a customized lesson plan to ensure you are a safe and capable driver
-          </h2>
-          <h2>
-            Call +1(226)972-6161 for more details
-          </h2>
-          <Button
-            onClick={navigateToPackage}>
-            Packages and Prices
-          </Button>
+    <div className="p-0 box my-0 text-center">
+      <div className="banner"></div>
+      <div className="banner-info">
+        <h1>Max's Driving School</h1>
+        <br />
+        <h2>
+          Serving the community to provide a customized lesson plan to ensure
+          you are a safe and capable driver
+        </h2>
+        <h2>Call +1(226)972-6161 for more details</h2>
+        <Button onClick={navigateToPackage}>Packages and Prices</Button>
 
-          <Button
-            onClick={navigateToCalendar}>
-            Book Your Class
-          </Button>
+        <Button onClick={navigateToCalendar}>Book Your Class</Button>
 
-          <Button
-            onClick={navigateToClients}>
-            Success Clients
-          </Button>
-
-        </div>
+        <Button onClick={navigateToClients}>Success Clients</Button>
       </div>
-      <div className="container">
-
-      </div>
+      <div className="container"></div>
     </div>
-
   );
 };
 
