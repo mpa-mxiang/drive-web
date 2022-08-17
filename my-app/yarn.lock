@@ -1950,6 +1950,159 @@
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.5.tgz"
   "version" "2.11.5"
 
+"@progress/kendo-data-query@^1.0.0", "@progress/kendo-data-query@^1.6.0":
+  "integrity" "sha512-oCPDk94cuhp+NskdjBlKH3/rW2fBmQo+tVYqe3CDcuoefc35d1whYgjo5OWV1ZxPCQ8R1u3PdLgoLYLhaze0lA=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-data-query/-/kendo-data-query-1.6.0.tgz"
+  "version" "1.6.0"
+  dependencies:
+    "tslib" "^1.7.0"
+
+"@progress/kendo-date-math@^1.4.0":
+  "integrity" "sha512-9amXMXqbipnEOXm5ptDjffdLYB1aRUjhqQLKaAjLu6JkRSoXngz7FMaZRu10mdvyb/TMbWtKjhxPYlC+mwFeyw=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-date-math/-/kendo-date-math-1.5.7.tgz"
+  "version" "1.5.7"
+  dependencies:
+    "tslib" "^1.7.0"
+
+"@progress/kendo-draggable-common@^0.2.1":
+  "integrity" "sha512-e1FraFsT7zwevswzZlQYL//K+fzmRUvkr/4emp51dzkARLDtGd95BtPNSoXYRG5xYHeueKBS75hzVwQI6Dm3Dg=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-draggable-common/-/kendo-draggable-common-0.2.3.tgz"
+  "version" "0.2.3"
+  dependencies:
+    "tslib" "^1.7.0"
+
+"@progress/kendo-drawing@^1.17.0", "@progress/kendo-drawing@^1.2.0", "@progress/kendo-drawing@^1.5.12":
+  "integrity" "sha512-JJ6YL7dc4yO9UWnQZfvEUzEfUowskoT9udlEyfEIRmoCCATpOE7bhyAZ8VOJ1R43xNFRNgVnakLXgXDF7vfhtw=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-drawing/-/kendo-drawing-1.17.0.tgz"
+  "version" "1.17.0"
+  dependencies:
+    "@progress/pako-esm" "^1.0.1"
+
+"@progress/kendo-licensing@^1.0.1", "@progress/kendo-licensing@^1.2.2":
+  "integrity" "sha512-DUGwVHmaIFrGkKdO2NjajfNBrLc0Jo0o11WTmo9AkqWzMT+zAOu0D5aghnWGPkPg3e8+T5m9dEZvWPw4eJP4Sw=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-licensing/-/kendo-licensing-1.2.2.tgz"
+  "version" "1.2.2"
+  dependencies:
+    "jsonwebtoken" "^8.5.1"
+
+"@progress/kendo-popup-common@1.9.0":
+  "integrity" "sha512-03FmQtRI2le3x78N1szlhtUkOyruq9aSf2SYCoyvd72mX9V9yAbqsoKByuFDazEbjHyHFkAmj32GrimWHevLCg=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-popup-common/-/kendo-popup-common-1.9.0.tgz"
+  "version" "1.9.0"
+
+"@progress/kendo-react-animation@^5.0.0", "@progress/kendo-react-animation@^5.5.0":
+  "integrity" "sha512-AF24S/fhEyttp+mIHpB+wbQEwm8K1zwWqk6J11yOXP/wXaUdmpN1mDopSMh1vOHYtVW6MmkBlF1M0bEEi2VdJg=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-animation/-/kendo-react-animation-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-react-common" "5.5.0"
+    "prop-types" "^15.6.0"
+    "react-transition-group" "^4.4.2"
+
+"@progress/kendo-react-buttons@^5.0.0", "@progress/kendo-react-buttons@^5.5.0", "@progress/kendo-react-buttons@5.5.0":
+  "integrity" "sha512-mojOvXKBD3x90NyHuWU8lzhepl87fCnUg8JsaAPDGW5jThb+vWWomsmCfm+JIB/XgK2csMunAw/RetsTKc9AJA=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-buttons/-/kendo-react-buttons-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-react-common" "5.5.0"
+    "@progress/kendo-react-popup" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-common@5.5.0":
+  "integrity" "sha512-tA+zuchrXAJi6ssdyrUzLdPlZTqiWhTXboZ6aIzYi4u8dW/7X9MGv0kZ769YUejuG4hUEXehRXu/13psfjuJag=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-common/-/kendo-react-common-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-draggable-common" "^0.2.1"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-data-tools@^5.0.0", "@progress/kendo-react-data-tools@^5.5.0":
+  "integrity" "sha512-CdC3e5T2eRVpkbelCwy8LaSmwkH3z9VTOcirHBNmYvWGpE3pNmsfI4U9gzu4bgmD+98A4Okp9yR8hUCmG4TaVA=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-data-tools/-/kendo-react-data-tools-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-react-common" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-dateinputs@^5.0.0", "@progress/kendo-react-dateinputs@^5.5.0":
+  "integrity" "sha512-lmeZWKPYQJizBztrhE8CcLRcUwW0Wy3H8ds7O6NopO2I+WIr66kIn1ERvltmWpFhuWklwFtcXOO5V/C9rwQdCw=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-dateinputs/-/kendo-react-dateinputs-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-date-math" "^1.4.0"
+    "@progress/kendo-react-buttons" "5.5.0"
+    "@progress/kendo-react-common" "5.5.0"
+    "@progress/kendo-react-labels" "5.5.0"
+    "@progress/kendo-react-popup" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-dropdowns@^5.0.0", "@progress/kendo-react-dropdowns@^5.5.0":
+  "integrity" "sha512-+lQLdhDMq6Oj6kaRxsDceTZyCwLtrvz4dEaXmio/WngGVAFZknJMFWlTDWSRJ1MdjeCLi0cT/IvvEfj1RTU3yA=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-react-common" "5.5.0"
+    "@progress/kendo-react-labels" "5.5.0"
+    "@progress/kendo-react-popup" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-grid@^5.5.0":
+  "integrity" "sha512-f9eN0V19kWvMDcvP0+cJVqzEKTh+XHkdsPlqP89SY3oaIQCuYp+Pr0G3dNhNO+GnxCm1CqCULDZo5ldXYMrQBA=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-grid/-/kendo-react-grid-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-react-common" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-inputs@^5.0.0", "@progress/kendo-react-inputs@^5.5.0":
+  "integrity" "sha512-QKbBA+HeKKX4qvwfaor4txzN7z32+33zfAruMPwGjA2EwRgaHJb1zGXUw8sLUgTz1gOFN+voMq2M9A8/JFFXQg=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-inputs/-/kendo-react-inputs-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-react-buttons" "5.5.0"
+    "@progress/kendo-react-common" "5.5.0"
+    "@progress/kendo-react-labels" "5.5.0"
+    "@progress/kendo-react-popup" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-intl@^5.0.0", "@progress/kendo-react-intl@^5.5.0":
+  "integrity" "sha512-5tlvgfAar1WdtzRNXvW5SQmvnLa8atKuyBOIK2/3lCCkdknIXUPX1fgkpKIpvfj4HZKGTW05rFMvjPFJw1s40A=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-intl/-/kendo-react-intl-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@telerik/kendo-intl" "^2.1.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-labels@5.5.0":
+  "integrity" "sha512-Kua4w2wgLEMyOMtQ5Y0JCbAxf5+VKDm2SPy2iWxFWFbg8ypYVDahfQ/Ik+Ze0lAQrWUmvyDmsnQAC1vJ3lHDTg=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-labels/-/kendo-react-labels-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-react-common" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-popup@^5.0.0", "@progress/kendo-react-popup@5.5.0":
+  "integrity" "sha512-ZIG2JDuqKJVHn8GGYoY4nFJEl7bMUOvrlslmnwdpeRHek5iUEuuThCEdLtcrbNOlGje9lwwNRg6g92tLz9kdUQ=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-popup/-/kendo-react-popup-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-popup-common" "1.9.0"
+    "@progress/kendo-react-common" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/kendo-react-treeview@^5.0.0", "@progress/kendo-react-treeview@^5.5.0":
+  "integrity" "sha512-KqXHKZHXWBYpEbr/eYJITZz1lHabsZ6exuZcrETqb6inueysjkKII9RHE17hPOb6Wp/RqdgmXdY7wUKGv5q/TQ=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-react-treeview/-/kendo-react-treeview-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@progress/kendo-react-common" "5.5.0"
+    "prop-types" "^15.6.0"
+
+"@progress/pako-esm@^1.0.1":
+  "integrity" "sha512-O4A3b1EuE9Xe1pC3Xz9Tcn1M/CYrL71f4y/5TXeytOVTkmkzBgYW97fYP2f+54H0e0erWRaqV/kUUB/a8Uxfbw=="
+  "resolved" "https://registry.npmjs.org/@progress/pako-esm/-/pako-esm-1.0.1.tgz"
+  "version" "1.0.1"
+
 "@react-aria/ssr@^3.2.0":
   "integrity" "sha512-wwJFdkl+Q8NU5yJ4NvdAOqx5LM3QtUVoSjuK7Ey8jZ4WS4bB0EqT3Kr3IInBs257HzZ5nXCiKXKE4NGXXuIRWA=="
   "resolved" "https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.2.0.tgz"
@@ -2203,6 +2356,11 @@
     "@svgr/plugin-jsx" "^5.4.0"
     "@svgr/plugin-svgo" "^5.4.0"
     "loader-utils" "^2.0.0"
+
+"@telerik/kendo-intl@^2.1.0":
+  "integrity" "sha512-30iXfS/1Kz3wn0rZLiWzrfJCv/c0Wffr5T42uxjJBTxZQ6XLBmUdfaQ4Jn1Td1W0skZrlP0M3/wNAEYTbxXigQ=="
+  "resolved" "https://registry.npmjs.org/@telerik/kendo-intl/-/kendo-intl-2.3.1.tgz"
+  "version" "2.3.1"
 
 "@testing-library/dom@^7.28.1":
   "integrity" "sha512-3UqjCpey6HiTZT92vODYLPxTBWlM8ZOOjr3LX5F37/VRipW2M1kX6I/Cm4VXzteZqfGfagg8yXywpcOgQBlNsQ=="
@@ -4203,6 +4361,11 @@
   dependencies:
     "node-int64" "^0.4.0"
 
+"buffer-equal-constant-time@1.0.1":
+  "integrity" "sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA=="
+  "resolved" "https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz"
+  "version" "1.0.1"
+
 "buffer-from@^1.0.0":
   "integrity" "sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A=="
   "resolved" "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.1.tgz"
@@ -5888,6 +6051,13 @@
     "inherits" "^2.0.1"
     "readable-stream" "^2.0.0"
     "stream-shift" "^1.0.0"
+
+"ecdsa-sig-formatter@1.0.11":
+  "integrity" "sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ=="
+  "resolved" "https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz"
+  "version" "1.0.11"
+  dependencies:
+    "safe-buffer" "^5.0.1"
 
 "ee-first@1.1.1":
   "integrity" "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
@@ -9437,6 +9607,22 @@
   "resolved" "https://registry.npmjs.org/jsonpointer/-/jsonpointer-5.0.0.tgz"
   "version" "5.0.0"
 
+"jsonwebtoken@^8.5.1":
+  "integrity" "sha512-XjwVfRS6jTMsqYs0EsuJ4LGxXV14zQybNd4L2r0UvbVnSF9Af8x7p5MzbJ90Ioz/9TI41/hTCvznF/loiSzn8w=="
+  "resolved" "https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz"
+  "version" "8.5.1"
+  dependencies:
+    "jws" "^3.2.2"
+    "lodash.includes" "^4.3.0"
+    "lodash.isboolean" "^3.0.3"
+    "lodash.isinteger" "^4.0.4"
+    "lodash.isnumber" "^3.0.3"
+    "lodash.isplainobject" "^4.0.6"
+    "lodash.isstring" "^4.0.1"
+    "lodash.once" "^4.0.0"
+    "ms" "^2.1.1"
+    "semver" "^5.6.0"
+
 "jss-plugin-camel-case@^10.5.1":
   "integrity" "sha512-UH6uPpnDk413/r/2Olmw4+y54yEF2lRIV8XIZyuYpgPYTITLlPOsq6XB9qeqv+75SQSg3KLocq5jUBXW8qWWww=="
   "resolved" "https://registry.npmjs.org/jss-plugin-camel-case/-/jss-plugin-camel-case-10.9.0.tgz"
@@ -9514,6 +9700,23 @@
   dependencies:
     "array-includes" "^3.1.5"
     "object.assign" "^4.1.2"
+
+"jwa@^1.4.1":
+  "integrity" "sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA=="
+  "resolved" "https://registry.npmjs.org/jwa/-/jwa-1.4.1.tgz"
+  "version" "1.4.1"
+  dependencies:
+    "buffer-equal-constant-time" "1.0.1"
+    "ecdsa-sig-formatter" "1.0.11"
+    "safe-buffer" "^5.0.1"
+
+"jws@^3.2.2":
+  "integrity" "sha512-YHlZCB6lMTllWDtSPHz/ZXTsi8S00usEV6v1tjq8tOUZzw7DpSDWVXjXDre6ed1w/pd495ODpHZYSdkRTsa0HA=="
+  "resolved" "https://registry.npmjs.org/jws/-/jws-3.2.2.tgz"
+  "version" "3.2.2"
+  dependencies:
+    "jwa" "^1.4.1"
+    "safe-buffer" "^5.0.1"
 
 "killable@^1.0.1":
   "integrity" "sha512-LzqtLKlUwirEUyl/nicirVmNiPvYs7l5n8wOPP7fyJVpUPkvCnW/vuiXGpylGUlnPDnB7311rARzAt3Mhswpjg=="
@@ -9726,6 +9929,36 @@
   "resolved" "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
   "version" "4.0.8"
 
+"lodash.includes@^4.3.0":
+  "integrity" "sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w=="
+  "resolved" "https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz"
+  "version" "4.3.0"
+
+"lodash.isboolean@^3.0.3":
+  "integrity" "sha512-Bz5mupy2SVbPHURB98VAcw+aHh4vRV5IPNhILUCsOzRmsTmSQ17jIuqopAentWoehktxGd9e/hbIXq980/1QJg=="
+  "resolved" "https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz"
+  "version" "3.0.3"
+
+"lodash.isinteger@^4.0.4":
+  "integrity" "sha512-DBwtEWN2caHQ9/imiNeEA5ys1JoRtRfY3d7V9wkqtbycnAmTvRRmbHKDV4a0EYc678/dia0jrte4tjYwVBaZUA=="
+  "resolved" "https://registry.npmjs.org/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz"
+  "version" "4.0.4"
+
+"lodash.isnumber@^3.0.3":
+  "integrity" "sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw=="
+  "resolved" "https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz"
+  "version" "3.0.3"
+
+"lodash.isplainobject@^4.0.6":
+  "integrity" "sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA=="
+  "resolved" "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz"
+  "version" "4.0.6"
+
+"lodash.isstring@^4.0.1":
+  "integrity" "sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw=="
+  "resolved" "https://registry.npmjs.org/lodash.isstring/-/lodash.isstring-4.0.1.tgz"
+  "version" "4.0.1"
+
 "lodash.memoize@^4.1.2":
   "integrity" "sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4="
   "resolved" "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz"
@@ -9735,6 +9968,11 @@
   "integrity" "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
   "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
   "version" "4.6.2"
+
+"lodash.once@^4.0.0":
+  "integrity" "sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg=="
+  "resolved" "https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz"
+  "version" "4.1.1"
 
 "lodash.sortby@^4.7.0":
   "integrity" "sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA=="
@@ -12278,7 +12516,7 @@
     "react-is" "^16.3.2"
     "warning" "^4.0.0"
 
-"prop-types@^15.6.2", "prop-types@^15.7.2", "prop-types@^15.8.1":
+"prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.7.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -12581,7 +12819,7 @@
     "object-assign" "^4.1.1"
     "scheduler" "^0.20.2"
 
-"react-dom@^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.14.0 || ^17 || ^18", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=16.14.0", "react-dom@>=16.3.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
+"react-dom@^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.14.0 || ^17 || ^18", "react-dom@^16.8.2 || ^17.0.0 || ^18.0.0", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=16.14.0", "react-dom@>=16.3.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -12798,7 +13036,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.14.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.3.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
+"react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.14.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^16.8.2 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.8.0", "react@>=0.14.0", "react@>=15.0.0", "react@>=16.14.0", "react@>=16.3.0", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -14814,6 +15052,11 @@
     "json5" "^1.0.1"
     "minimist" "^1.2.6"
     "strip-bom" "^3.0.0"
+
+"tslib@^1.7.0":
+  "integrity" "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+  "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
+  "version" "1.14.1"
 
 "tslib@^1.8.1":
   "integrity" "sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ=="
