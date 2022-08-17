@@ -12,6 +12,8 @@ import About from "./pages/About";
 import Clients from "./pages/Clients";
 import Packages from "./pages/Packages";
 import Register from "./pages/Register";
+import "@progress/kendo-theme-default/dist/all.css";
+
 function App() {
   return (
     <div className="App">

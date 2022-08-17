@@ -16,7 +16,7 @@ const getRandomNumInRange = (min, max) => {
 
 const pickSlotTimes = times => {
     // Get a random number that will indicate how many time slots we pick
-    const timesToPick = getRandomNumInRange(0, times.length);
+    const timesToPick = times.length - 1;
 
     // If the random picked is the maximum possible then return all times
     if (timesToPick === times.length - 1) {

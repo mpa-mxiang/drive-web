@@ -2098,6 +2098,11 @@
     "@progress/kendo-react-common" "5.5.0"
     "prop-types" "^15.6.0"
 
+"@progress/kendo-theme-default@^5.6.0":
+  "integrity" "sha512-FjnYHxNA1DZ94CEFChCDaNIOxX5/DOo0T17WI0Mhsgd34nA0RLzWgbz0bkvHUjtYk4J5uQWMu5ex66ytwctvJg=="
+  "resolved" "https://registry.npmjs.org/@progress/kendo-theme-default/-/kendo-theme-default-5.6.0.tgz"
+  "version" "5.6.0"
+
 "@progress/pako-esm@^1.0.1":
   "integrity" "sha512-O4A3b1EuE9Xe1pC3Xz9Tcn1M/CYrL71f4y/5TXeytOVTkmkzBgYW97fYP2f+54H0e0erWRaqV/kUUB/a8Uxfbw=="
   "resolved" "https://registry.npmjs.org/@progress/pako-esm/-/pako-esm-1.0.1.tgz"
