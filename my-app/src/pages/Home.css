@@ -40,3 +40,23 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+/*
+.i.ico-lg {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 45px;
+}
+
+.i.ico-light {
+  border: transparent;
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.i.ico-rounded {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+*/
