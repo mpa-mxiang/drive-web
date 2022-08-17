@@ -9,33 +9,34 @@ const times = [
     "16:00 - 18:00",
     "18:00 - 20:00",
 ];
-
+/*
 const getRandomNumInRange = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
 };
-
+*/
 const pickSlotTimes = times => {
-    // Get a random number that will indicate how many time slots we pick
-    const timesToPick = times.length - 1;
+    /*
+    // Get a random number that will indicate how many time slots we pick\
+    const timesToPick = getRandomNumInRange(0, times.length);
 
     // If the random picked is the maximum possible then return all times
     if (timesToPick === times.length - 1) {
         return times;
     }
-
+    */
     let timesPicked = [];
 
     // Loop until we have picked specified number of times
-    while (timesToPick !== timesPicked.length - 1) {
-        // Get a new index and time
-        const index = getRandomNumInRange(0, times.length);
-        const selectedTime = times[index];
-        // If we already picked that time we continue
-        // as we don't want duplicated
-        if (timesPicked.includes(selectedTime)) continue;
-        // Keep the time
-        timesPicked.push(selectedTime);
-    }
+    //while (timesToPick !== timesPicked.length - 1) {
+    // Get a new index and time
+    const index = times;
+    const selectedTime = times[index];
+    // If we already picked that time we continue
+    // as we don't want duplicated
+    //if (timesPicked.includes(selectedTime)) continue;
+    // Keep the time
+    timesPicked.push(selectedTime);
+    //}
 
     // We need to sort the times, as they may not be in a correct order
     return timesPicked.sort();
@@ -58,7 +59,7 @@ const BookDrivingSlot = props => {
 
         // If we have no cached time slots then pick new ones
         if (!newBookingTimes) {
-            newBookingTimes = pickSlotTimes(times);
+            newBookingTimes = pickSlotTimes;
             // Update cache with new time slots for the selected date
             timeSlotCacheRef.current.set(bookingDate.toDateString(), newBookingTimes);
         }
