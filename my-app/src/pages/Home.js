@@ -79,11 +79,55 @@ const Home = () => {
 
           All of our in-class and in-car instructors are Ministry certified. They must go through annual criminal background check in order to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
         <hr></hr>
-        <div class="text-center">
+        <div className="container">
+          <h2>Book Your Road Test</h2>
+          <p>
+            <a href="https://drivetest.ca/book-a-road-test/booking" target="_blank">https://drivetest.ca/book-a-road-test/booking</a>
+          </p>
         </div>
       </div>
+      <footer itemscope="" itemtype="http://schema.org/localBusiness" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+
+              <img class="footer-logo" src="/images/logo-white.png" width="126" alt=""></img>
+
+              <p>Call and see why we are different.</p>
+
+              <address>
+                <ul class="list-unstyled">
+
+                  <li class="footer-sprite phone">
+                    Phone: <strong><span itemprop="telephone">1-226-972-6161</span></strong>
+                  </li>
+                  <li class="footer-sprite email">
+                    <a href="mailto:maxamin@hotmail.com"><span itemprop="email">maxamin@hotmail.com </span></a>
+                  </li>
+                </ul>
+              </address>
+
+            </div>
+            <div class="col-md-3">
+
+              <h4 class="letter-spacing-1">EXPLORE OUR SITE</h4>
+              <ul class="footer-links list-unstyled">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+
+            © 2022 <span itemprop="name">Max's Driving School</span> Inc.
+          </div>
+        </div>
+      </footer>
     </div>
+
   );
 };
 
 export default Home;
+
