@@ -75,11 +75,7 @@ const Home = () => {
         <div className="container">
 
           <h2>About us</h2>
-          <p>Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to provide a high quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-class/in-car/online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is available every month. Upon successful completion of the course, the graduates will qualify for the Driver's Licence History.
-
-            The Driver's Licence History provides proof of successful completion of, and graduation from our BDE course and it is widely recognized by the insurance industry. BDE graduates with a Driver's Licence History may be eligible for an insurance discount.
-
-            All of our in-class and in-car instructors are Ministry certified. They must go through annual criminal background check in order to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
+          <p>Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to providing high-quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-car+online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is available. Upon successful completion of the study, the graduates will qualify for the Driver's Licence History. The Driver's Licence History provides proof of successful completion, and the insurance industry widely recognizes graduation from our BDE course and it. BDE graduates with a Driver's Licence History may be eligible for an insurance discount. All of our in-class and in-car instructors are Ministry certified. They must undergo annual criminal background checks to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
           <hr></hr>
         </div>
       </section>
