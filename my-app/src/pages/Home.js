@@ -71,21 +71,28 @@ const Home = () => {
 
         <Button onClick={navigateToClients}>Success Clients</Button>
       </div>
-      <div className="container">
-        <h2>About us</h2>
-        <p>Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to provide a high quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-class/in-car/online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is available every month. Upon successful completion of the course, the graduates will qualify for the Driver's Licence History.
-
-          The Driver's Licence History provides proof of successful completion of, and graduation from our BDE course and it is widely recognized by the insurance industry. BDE graduates with a Driver's Licence History may be eligible for an insurance discount.
-
-          All of our in-class and in-car instructors are Ministry certified. They must go through annual criminal background check in order to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
-        <hr></hr>
+      <section>
         <div className="container">
-          <h2>Book Your Road Test</h2>
-          <p>
-            <a href="https://drivetest.ca/book-a-road-test/booking" target="_blank">https://drivetest.ca/book-a-road-test/booking</a>
-          </p>
+
+          <h2>About us</h2>
+          <p>Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to provide a high quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-class/in-car/online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is available every month. Upon successful completion of the course, the graduates will qualify for the Driver's Licence History.
+
+            The Driver's Licence History provides proof of successful completion of, and graduation from our BDE course and it is widely recognized by the insurance industry. BDE graduates with a Driver's Licence History may be eligible for an insurance discount.
+
+            All of our in-class and in-car instructors are Ministry certified. They must go through annual criminal background check in order to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
+          <hr></hr>
         </div>
+      </section>
+      <div className="container">
+
+        <h2>Book Your Road Test</h2>
+        <p>
+          <a href="https://drivetest.ca/book-a-road-test/booking" target="_blank">https://drivetest.ca/book-a-road-test/booking</a>
+        </p>
+
       </div>
+
+
       <footer itemscope="" itemtype="http://schema.org/localBusiness" id="footer">
         <div class="container">
           <div class="row">
@@ -124,7 +131,7 @@ const Home = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </div >
 
   );
 };

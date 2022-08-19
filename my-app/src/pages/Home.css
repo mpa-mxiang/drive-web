@@ -54,6 +54,27 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#313131', GradientType=0);
 }
 
+.section {
+  display: block;
+  position: relative;
+  padding: 80px 0;
+  border-bottom: rgba(0, 0, 0, .1) 1px solid;
+  background-color: #fff;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  background-size: cover !important;
+  box-sizing: border-box !important;
+}
 
 /*
 .i.ico-lg {
