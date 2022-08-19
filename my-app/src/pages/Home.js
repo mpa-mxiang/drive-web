@@ -89,44 +89,7 @@ const Home = () => {
       </div>
 
 
-      <footer itemscope="" itemtype="http://schema.org/localBusiness" id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
 
-              <img class="footer-logo" src="/images/logo-white.png" width="126" alt=""></img>
-
-              <p>Call and see why we are different.</p>
-
-              <address>
-                <ul class="list-unstyled">
-
-                  <li class="footer-sprite phone">
-                    Phone: <strong><span itemprop="telephone">1-226-972-6161</span></strong>
-                  </li>
-                  <li class="footer-sprite email">
-                    <a href="mailto:maxamin@hotmail.com"><span itemprop="email">maxamin@hotmail.com </span></a>
-                  </li>
-                </ul>
-              </address>
-
-            </div>
-            <div class="col-md-3">
-
-              <h4 class="letter-spacing-1">EXPLORE OUR SITE</h4>
-              <ul class="footer-links list-unstyled">
-
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="copyright">
-          <div class="container">
-
-            © 2022 <span itemprop="name">Max's Driving School</span> Inc.
-          </div>
-        </div>
-      </footer>
     </div >
 
   );
