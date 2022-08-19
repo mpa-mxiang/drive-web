@@ -54,7 +54,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#313131', GradientType=0);
 }
 
-.section {
+#section {
   display: block;
   position: relative;
   padding: 80px 0;
