@@ -71,23 +71,33 @@ const Home = () => {
 
         <Button onClick={navigateToClients}>Success Clients</Button>
       </div>
-      <section>
-        <div className="container">
-
-          <h2>About us</h2>
-          <p>Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to providing high-quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-car+online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is available. Upon successful completion of the study, the graduates will qualify for the Driver's Licence History. The Driver's Licence History provides proof of successful completion, and the insurance industry widely recognizes graduation from our BDE course and it. BDE graduates with a Driver's Licence History may be eligible for an insurance discount. All of our in-class and in-car instructors are Ministry certified. They must undergo annual criminal background checks to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
-          <hr></hr>
-        </div>
-      </section>
       <div className="container">
-
+        <br></br>
+        <br></br>
+        <br></br>
+        <h2>About us</h2>
+        <p>Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to providing high-quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-car+online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is available. Upon successful completion of the study, the graduates will qualify for the Driver's Licence History. The Driver's Licence History provides proof of successful completion, and the insurance industry widely recognizes graduation from our BDE course and it. BDE graduates with a Driver's Licence History may be eligible for an insurance discount. All of our in-class and in-car instructors are Ministry certified. They must undergo annual criminal background checks to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
+        <br></br>
+        <br></br>
+        <br></br>
+        <hr></hr>
+      </div>
+      <div className="container">
+        <br></br>
+        <br></br>
+        <br></br>
         <h2>Book Your Road Test</h2>
         <p>
           <a href="https://drivetest.ca/book-a-road-test/booking" target="_blank">https://drivetest.ca/book-a-road-test/booking</a>
         </p>
-
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
-
+      <hr></hr>
+      <br></br>
+      <br></br>
+      <br></br>
 
 
     </div >
