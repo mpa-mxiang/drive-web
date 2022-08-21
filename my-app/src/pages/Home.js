@@ -131,7 +131,6 @@ const Home = () => {
         <br></br>
         <br></br>
       </div>
-      <hr></hr>
       <br></br>
       <br></br>
       <br></br>
