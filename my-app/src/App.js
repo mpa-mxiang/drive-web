@@ -54,7 +54,11 @@ function App() {
 
               <h4 class="letter-spacing-1">EXPLORE OUR SITE</h4>
               <ul class="footer-links list-unstyled">
-
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/packages">Packages</a></li>
+                <li><a href="/calendar">Calendar</a></li>
+                <li><a href="/clients">Success Clients</a></li>
               </ul>
             </div>
           </div>
