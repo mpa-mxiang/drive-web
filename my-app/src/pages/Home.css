@@ -54,7 +54,29 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#313131', GradientType=0);
 }
 
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+.text-success {
+  color: #02b700 !important;
+}
+
+.fa-check:before {
+  content: "\f00c";
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /*
 .i.ico-lg {

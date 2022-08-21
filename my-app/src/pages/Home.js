@@ -82,6 +82,43 @@ const Home = () => {
         <br></br>
         <hr></hr>
       </div>
+      <div class="container">
+        <header class="text-center margin-bottom-60">
+          <h2>Reasons Why YOU Should Join Us</h2>
+          <p class="lead font-lato">Max's Driving School is one of the most respected driving schools in Kitchener. Our unique approach to teaching, one-of-a-kind teaching techniques, and efficient program structures make Pioneer Driving School an excellent choice for new drivers in Kitchener, Waterloo, and Cambridge.</p>
+        </header>
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <ul class="list-unstyled list-icons">
+              <li><i class="fa fa-check text-success"></i>Convenient location (lots of parking, bus stop in front)</li>
+              <li><i class="fa fa-check text-success"></i>Learn Defensive Driving Techniques</li>
+              <li><i class="fa fa-check text-success"></i>Precision Driving Program</li>
+              <li><i class="fa fa-check text-success"></i>Hazard Avoidance Program</li>
+              <li><i class="fa fa-check text-success"></i>Flexible hours for the in-car training</li>
+              <li><i class="fa fa-check text-success"></i>Training could be provided in your own vehicle</li>
+              <li><i class="fa fa-check text-success"></i>Package deals and single lessons available</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <ul class="list-unstyled list-icons">
+              <li><i class="fa fa-check text-success"></i>Freeway Driving</li>
+              <li><i class="fa fa-check text-success"></i>Dual-control vehicles to ensure your comfort and safety</li>
+              <li>
+                <i class="fa fa-check text-success"></i>
+                Free pick up and drop off anywhere in Kitchener, Waterloo and Cambridge area
+              </li>
+              <li><i class="fa fa-check text-success"></i>Eligibilty of G2 licence in 8 months</li>
+              <li><i class="fa fa-check text-success"></i>Payment plans available to suit your budget needs</li>
+              <li><i class="fa fa-check text-success"></i>High-quality service</li>
+              <li><i class="fa fa-check text-success"></i>Gift certificates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <hr></hr>
       <div className="container">
         <br></br>
         <br></br>
