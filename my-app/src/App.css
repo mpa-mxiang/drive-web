@@ -50,6 +50,19 @@ a {
   background-color: transparent;
 }
 
+#footer ul.footer-links>li>a:before {
+  content: "\f105";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  padding-right: 10px;
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 user agent stylesheet a:-webkit-any-link {
   color: -webkit-link;
