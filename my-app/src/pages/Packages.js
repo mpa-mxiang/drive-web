@@ -1,16 +1,19 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { HiCheckCircle, HiXCircle } from 'react-icons/hi';
+import Calendar from './Calendar';
 
 const Packages = () => {
   return (
+
     <div>
       <Table responsive="sm">
         <thead>
           <tr>
             <th>Course Packages</th>
-            <th>Silver</th>
-            <th>Gold</th>
+            <th>Bronze<br></br><small>HST included</small></th>
+
+            <th>Sliver<br></br><small>HST included</small></th>
           </tr>
         </thead>
         <tbody>
@@ -42,12 +45,30 @@ const Packages = () => {
           </tr>
           <tr>
             <td>Cost</td>
-            <td>650</td>
-            <td>850</td>
+            <td><del>740</del>
+              <p>640</p>
+            </td>
+            <td><del>925</del>
+              <p>775</p></td>
+          </tr>
+          <tr>
+            <td>Register to drive at your own schedule/time</td>
+            <td>            <a href="/Calendar" class="btn btn-primary fullwidth text-left">
+              <i class="fa fa-shopping-cart"></i>
+              Register Online
+            </a></td>
+            <td>            <a href="/Calendar" class="btn btn-primary fullwidth text-left">
+              <i class="fa fa-shopping-cart"></i>
+              Register Online
+            </a></td>
           </tr>
         </tbody>
+
       </Table>
-    </div>
+    </div >
+
+
+
   );
 };
 
