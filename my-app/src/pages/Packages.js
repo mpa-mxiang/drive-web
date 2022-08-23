@@ -1,7 +1,6 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { HiCheckCircle, HiXCircle } from 'react-icons/hi';
-import Calendar from './Calendar';
 
 const Packages = () => {
   return (
