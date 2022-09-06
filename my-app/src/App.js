@@ -8,11 +8,11 @@ import React from 'react';
 import Home from './pages/Home';
 //import HeaderBar from "./HeaderBar";
 import Navbar from './components/Navbar/Index';
-import About from "./pages/About";
-import Clients from "./pages/Clients";
-import Packages from "./pages/Packages";
-import Register from "./pages/Register";
-import "@progress/kendo-theme-default/dist/all.css";
+import About from './pages/About';
+import Clients from './pages/Clients';
+import Packages from './pages/Packages';
+import Register from './pages/Register';
+import '@progress/kendo-theme-default/dist/all.css';
 
 function App() {
   return (
@@ -28,45 +28,64 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
-      <footer itemscope="" itemtype="http://schema.org/localBusiness" id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-
-              <img class="footer-logo" src="/images/logo-white.png" width="126" alt=""></img>
+      <footer
+        itemScope=""
+        itemType="http://schema.org/localBusiness"
+        id="footer"
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3">
+              <img
+                className="footer-logo"
+                src="/images/logo-white.png"
+                width="126"
+                alt=""
+              ></img>
 
               <p>Call and see why we are different.</p>
 
               <address>
-                <ul class="list-unstyled">
-
-                  <li class="footer-sprite phone">
-                    Phone: <strong><span itemprop="telephone">1-226-972-6161</span></strong>
+                <ul className="list-unstyled">
+                  <li className="footer-sprite phone">
+                    Phone:{' '}
+                    <strong>
+                      <span itemProp="telephone">1-226-972-6161</span>
+                    </strong>
                   </li>
-                  <li class="footer-sprite email">
-                    <a href="mailto:maxamin@hotmail.com"><span itemprop="email">maxamin@hotmail.com </span></a>
+                  <li className="footer-sprite email">
+                    <a href="mailto:maxamin@hotmail.com">
+                      <span itemProp="email">maxamin@hotmail.com </span>
+                    </a>
                   </li>
                 </ul>
               </address>
-
             </div>
-            <div class="col-md-3">
-
-              <h4 class="letter-spacing-1">EXPLORE OUR SITE</h4>
-              <ul class="footer-links list-unstyled">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/packages">Packages</a></li>
-                <li><a href="/booking">Calendar</a></li>
-                <li><a href="/clients">Success Clients</a></li>
+            <div className="col-md-3">
+              <h4 className="letter-spacing-1">EXPLORE OUR SITE</h4>
+              <ul className="footer-links list-unstyled">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/about">About</a>
+                </li>
+                <li>
+                  <a href="/packages">Packages</a>
+                </li>
+                <li>
+                  <a href="/booking">Calendar</a>
+                </li>
+                <li>
+                  <a href="/clients">Success Clients</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="copyright">
-          <div class="container">
-
-            © 2022 <span itemprop="name">Max's Driving School</span> Inc.
+        <div className="copyright">
+          <div className="container">
+            © 2022 <span itemProp="name">Max's Driving School</span> Inc.
           </div>
         </div>
       </footer>

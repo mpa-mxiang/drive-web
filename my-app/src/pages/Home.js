@@ -67,7 +67,7 @@ const Home = () => {
         <h2>Call +1(226)972-6161 for more details</h2>
         <Button onClick={navigateToPackage}>Packages and Prices</Button>
 
-        <Button onClick={navigateToCalendar}>Book Your Class</Button>
+        <Button onClick={navigateToCalendar}>Book Your className</Button>
 
         <Button onClick={navigateToClients}>Success Clients</Button>
       </div>
@@ -76,41 +76,41 @@ const Home = () => {
         <br></br>
         <br></br>
         <h2>About us</h2>
-        <p>Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to providing high-quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-car+online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is available. Upon successful completion of the study, the graduates will qualify for the Driver's Licence History. The Driver's Licence History provides proof of successful completion, and the insurance industry widely recognizes graduation from our BDE course and it. BDE graduates with a Driver's Licence History may be eligible for an insurance discount. All of our in-class and in-car instructors are Ministry certified. They must undergo annual criminal background checks to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
+        <p>Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to providing high-quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-car+online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is available. Upon successful completion of the study, the graduates will qualify for the Driver's Licence History. The Driver's Licence History provides proof of successful completion, and the insurance industry widely recognizes graduation from our BDE course and it. BDE graduates with a Driver's Licence History may be eligible for an insurance discount. All of our in-className and in-car instructors are Ministry certified. They must undergo annual criminal background checks to maintain their teaching privileges. They all have up-to-date knowledge of the traffic Law and Regulations.</p>
         <br></br>
         <br></br>
         <br></br>
         <hr></hr>
       </div>
-      <div class="container">
-        <header class="text-center margin-bottom-60">
+      <div className="container">
+        <header className="text-center margin-bottom-60">
           <h2>Reasons Why YOU Should Join Us</h2>
-          <p class="lead font-lato">Max's Driving School is one of the most respected driving schools in Kitchener. Our unique approach to teaching, one-of-a-kind teaching techniques, and efficient program structures make Pioneer Driving School an excellent choice for new drivers in Kitchener, Waterloo, and Cambridge.</p>
+          <p className="lead font-lato">Max's Driving School is one of the most respected driving schools in Kitchener. Our unique approach to teaching, one-of-a-kind teaching techniques, and efficient program structures make Pioneer Driving School an excellent choice for new drivers in Kitchener, Waterloo, and Cambridge.</p>
         </header>
-        <div class="row">
-          <div class="col-md-6 col-xs-12">
-            <ul class="list-unstyled list-icons">
-              <li><i class="fa fa-check text-success"></i>Convenient location (lots of parking, bus stop in front)</li>
-              <li><i class="fa fa-check text-success"></i>Learn Defensive Driving Techniques</li>
-              <li><i class="fa fa-check text-success"></i>Precision Driving Program</li>
-              <li><i class="fa fa-check text-success"></i>Hazard Avoidance Program</li>
-              <li><i class="fa fa-check text-success"></i>Flexible hours for the in-car training</li>
-              <li><i class="fa fa-check text-success"></i>Training could be provided in your own vehicle</li>
-              <li><i class="fa fa-check text-success"></i>Package deals and single lessons available</li>
+        <div className="row">
+          <div className="col-md-6 col-xs-12">
+            <ul className="list-unstyled list-icons">
+              <li><i className="fa fa-check text-success"></i>Convenient location (lots of parking, bus stop in front)</li>
+              <li><i className="fa fa-check text-success"></i>Learn Defensive Driving Techniques</li>
+              <li><i className="fa fa-check text-success"></i>Precision Driving Program</li>
+              <li><i className="fa fa-check text-success"></i>Hazard Avoidance Program</li>
+              <li><i className="fa fa-check text-success"></i>Flexible hours for the in-car training</li>
+              <li><i className="fa fa-check text-success"></i>Training could be provided in your own vehicle</li>
+              <li><i className="fa fa-check text-success"></i>Package deals and single lessons available</li>
             </ul>
           </div>
-          <div class="col-md-6 col-xs-12">
-            <ul class="list-unstyled list-icons">
-              <li><i class="fa fa-check text-success"></i>Freeway Driving</li>
-              <li><i class="fa fa-check text-success"></i>Dual-control vehicles to ensure your comfort and safety</li>
+          <div className="col-md-6 col-xs-12">
+            <ul className="list-unstyled list-icons">
+              <li><i className="fa fa-check text-success"></i>Freeway Driving</li>
+              <li><i className="fa fa-check text-success"></i>Dual-control vehicles to ensure your comfort and safety</li>
               <li>
-                <i class="fa fa-check text-success"></i>
+                <i className="fa fa-check text-success"></i>
                 Free pick up and drop off anywhere in Kitchener, Waterloo and Cambridge area
               </li>
-              <li><i class="fa fa-check text-success"></i>Eligibilty of G2 licence in 8 months</li>
-              <li><i class="fa fa-check text-success"></i>Payment plans available to suit your budget needs</li>
-              <li><i class="fa fa-check text-success"></i>High-quality service</li>
-              <li><i class="fa fa-check text-success"></i>Gift certificates</li>
+              <li><i className="fa fa-check text-success"></i>Eligibilty of G2 licence in 8 months</li>
+              <li><i className="fa fa-check text-success"></i>Payment plans available to suit your budget needs</li>
+              <li><i className="fa fa-check text-success"></i>High-quality service</li>
+              <li><i className="fa fa-check text-success"></i>Gift certificates</li>
             </ul>
           </div>
         </div>

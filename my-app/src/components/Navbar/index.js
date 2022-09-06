@@ -15,7 +15,7 @@ const Navbar = () => {
             Packages
           </NavLink>
           <NavLink
-            to="/calendar"
+            to="/booking"
             style={({ isActive }) => ({
               color: isActive ? '#fff' : '#545e6f',
               background: isActive ? '#7600dc' : '#f0f0f0',

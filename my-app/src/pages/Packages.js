@@ -24,7 +24,7 @@ const Packages = () => {
             <td>10</td>
           </tr>
           <tr>
-            <td>Hours of in-class teaching</td>
+            <td>Hours of in-className teaching</td>
             <td>20</td>
             <td>20</td>
           </tr>
@@ -53,12 +53,12 @@ const Packages = () => {
           </tr>
           <tr>
             <td>Register to drive at your own schedule/time</td>
-            <td>            <a href="/Calendar" class="btn btn-primary fullwidth text-left">
-              <i class="fa fa-shopping-cart"></i>
+            <td>            <a href="/Calendar" className="btn btn-primary fullwidth text-left">
+              <i className="fa fa-shopping-cart"></i>
               Register Online
             </a></td>
-            <td>            <a href="/Calendar" class="btn btn-primary fullwidth text-left">
-              <i class="fa fa-shopping-cart"></i>
+            <td>            <a href="/Calendar" className="btn btn-primary fullwidth text-left">
+              <i className="fa fa-shopping-cart"></i>
               Register Online
             </a></td>
           </tr>
@@ -66,10 +66,10 @@ const Packages = () => {
 
       </Table>
       <br></br>
-      <div class="container">
+      <div className="container">
         <h1>Both prices includes:</h1>
-        <div class="row">
-          <div class="col-md-6 col-xs-12">
+        <div className="row">
+          <div className="col-md-6 col-xs-12">
             <p>Each In-Car Session is at least 60 minutes
               <br></br>
               One-on-one In-Car Training
@@ -78,7 +78,7 @@ const Packages = () => {
               <small>(for road test & insurance reduction)</small>
             </p>
           </div>
-          <div class="col-md-6 col-xs-12">
+          <div className="col-md-6 col-xs-12">
             <p>
               Free Home, Work or School Pickup for In-Car Lessons<br></br>
               <small>(for road test & insurance reduction)</small>
@@ -92,12 +92,12 @@ const Packages = () => {
           </div>
         </div>
         <br></br>
-        <div class="table-responsive">
-          <table class="table table-bordered table-striped">
+        <div className="table-responsive">
+          <table className="table table-bordered table-striped">
             <thead>
               <tr>
-                <th class="text-center">Private/Individual Package</th>
-                <th class="text-center">Price</th>
+                <th className="text-center">Private/Individual Package</th>
+                <th className="text-center">Price</th>
                 <th></th>
               </tr>
             </thead>
