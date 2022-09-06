@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 //import { Container, Row, Col, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import './App.css';
-import Calendar from './pages/Calendar';
+import Booking from './pages/Booking';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Home from './pages/Home';
 //import HeaderBar from "./HeaderBar";
-import Navbar from './components/Navbar/index';
+import Navbar from './components/Navbar/Index';
 import About from "./pages/About";
 import Clients from "./pages/Clients";
 import Packages from "./pages/Packages";
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/booking" element={<Booking />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/register" element={<Register />} />
@@ -57,7 +57,7 @@ function App() {
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/packages">Packages</a></li>
-                <li><a href="/calendar">Calendar</a></li>
+                <li><a href="/booking">Calendar</a></li>
                 <li><a href="/clients">Success Clients</a></li>
               </ul>
             </div>

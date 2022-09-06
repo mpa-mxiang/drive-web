@@ -29,7 +29,7 @@ const Home = () => {
 
   const navigateToCalendar = async () => {
     try {
-      navigate('/calendar');
+      navigate('/booking');
     } catch (err) {
       setError(err.message);
       return { error };

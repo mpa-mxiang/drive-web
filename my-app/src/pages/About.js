@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import './About.css';
 import self from '../images/self.jpg';
-import { userMemo } from 'react';
-import { GoogleMap, userLoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 const About = () => {
-  const { isLoaded } = userLoadScript({
+  const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
   if (!isLoaded) return <div>Loading...</div>;
@@ -19,18 +18,24 @@ const About = () => {
         </p>
       </div>
       <div>
-
+        <GoogleMap
+          zoom={10}
+          defaultCenter={{
+            lat: 44,
+            lng: -80,
+          }}
+          mapContainerClassName="map-container"
+        >
+          <Marker
+            position={{
+              lat: 44,
+              lng: -80,
+            }}
+          ></Marker>
+        </GoogleMap>
       </div>
     </div>
   );
 };
-function Map() {
-  const center = userMemo(() => { { lat: 44, lng: -80 } });
 
-  return <GoogleMap zoom={10}
-    center={center}
-    mapContainerClassName="map-container">
-    <Marker position={center}></Marker>
-  </GoogleMap>;
-}
 export default About;
