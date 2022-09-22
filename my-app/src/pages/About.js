@@ -21,14 +21,14 @@ const About = () => {
         <GoogleMap
           zoom={10}
           defaultCenter={{
-            lat: 44,
+            lat: 144,
             lng: -80,
           }}
           mapContainerClassName="map-container"
         >
           <Marker
             position={{
-              lat: 44,
+              lat: 144,
               lng: -80,
             }}
           ></Marker>
