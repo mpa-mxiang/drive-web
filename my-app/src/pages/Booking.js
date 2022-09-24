@@ -1,23 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Calendar } from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import { Calendar } from "react-calendar";
 
 const times = [
-  "08:00 - 10:00",
-  "10:00 - 12:00",
-  "12:00 - 14:00",
-  "14:00 - 16:00",
-  "16:00 - 18:00",
-  "18:00 - 20:00",
+  '08:00 - 10:00',
+  '10:00 - 12:00',
+  '12:00 - 14:00',
+  '14:00 - 16:00',
+  '16:00 - 18:00',
+  '18:00 - 20:00',
 ];
 
-const getRandomNumInRange = (min, max) => {
-  return Math.floor(Math.random() * (max - min) + min);
-};
 
 const pickSlotTimes = times => {
   // Get a random number that will indicate how many time slots we pick
-  const timesToPick = getRandomNumInRange(0, times.length);
+  const timesToPick = (0, times.length);
 
   // If the random picked is the maximum possible then return all times
   if (timesToPick === times.length - 1) {
@@ -29,7 +26,7 @@ const pickSlotTimes = times => {
   // Loop until we have picked specified number of times
   while (timesToPick !== timesPicked.length - 1) {
     // Get a new index and time
-    const index = getRandomNumInRange(0, times.length);
+    const index = (0, times.length);
     const selectedTime = times[index];
     // If we already picked that time we continue
     // as we don't want duplicated
@@ -73,17 +70,14 @@ const Booking = props => {
   };
 
   return (
-    <div className="k-my-8">
-      <div className="k-mb-4 k-font-weight-bold">Book driving slot</div>
-
-      <div className="k-flex k-display-flex k-mb-4">
+    <div>
+      <div>
         <Calendar value={bookingDate} onChange={onDateChange} />
-        <div className="k-ml-4 k-display-flex k-flex-col">
+        <div>
           {bookingTimes.map(time => {
             return (
               <button
                 key={time}
-                className="k-button k-mb-4"
                 onClick={e => setSelectedTimeSlot(time)}
               >
                 {time}
