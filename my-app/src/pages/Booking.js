@@ -73,14 +73,14 @@ const Booking = props => {
     <div className="k-my-8">
       <div className="k-mb-4 k-font-weight-bold">Book driving slot</div>
 
-      <div className="k-flex k-display-flex k-mb-4">
+      <div className="Booking">
         <Calendar value={bookingDate} onChange={onDateChange} />
-        <div className="k-ml-4 k-display-flex k-flex-col">
+        <div className="Booking">
           {bookingTimes.map(time => {
             return (
               <button
                 key={time}
-                className="k-button k-mb-4"
+                className="Booking"
                 onClick={e => setSelectedTimeSlot(time)}
               >
                 {time}
