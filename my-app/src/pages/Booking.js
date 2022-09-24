@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import { Calendar } from "react-calendar";
 
 const times = [
-  '08:00 - 10:00',
-  '10:00 - 12:00',
-  '12:00 - 14:00',
-  '14:00 - 16:00',
-  '16:00 - 18:00',
-  '18:00 - 20:00',
+  "08:00 - 10:00",
+  "10:00 - 12:00",
+  "12:00 - 14:00",
+  "14:00 - 16:00",
+  "16:00 - 18:00",
+  "18:00 - 20:00",
 ];
 
 const getRandomNumInRange = (min, max) => {
@@ -73,15 +73,17 @@ const Booking = props => {
   };
 
   return (
-    <div className="">
-      <div className="">
+    <div className="k-my-8">
+      <div className="k-mb-4 k-font-weight-bold">Book driving slot</div>
+
+      <div className="k-flex k-display-flex k-mb-4">
         <Calendar value={bookingDate} onChange={onDateChange} />
-        <div className="">
+        <div className="k-ml-4 k-display-flex k-flex-col">
           {bookingTimes.map(time => {
             return (
               <button
                 key={time}
-                className=""
+                className="k-button k-mb-4"
                 onClick={e => setSelectedTimeSlot(time)}
               >
                 {time}
