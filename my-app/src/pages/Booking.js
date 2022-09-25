@@ -74,11 +74,15 @@ const Booking = props => {
       <div className="k-mb-4 k-font-weight-bold">Book driving slot</div>
 
       <div className="k-my-8">
+
         <Calendar value={bookingDate} onChange={onDateChange} />
         <div className="k-my-8">
+
           {bookingTimes.map(time => {
+            //didnt enter here
             return (
-              <button
+
+              < button
                 key={time}
                 className="k-my-8"
                 onClick={e => setSelectedTimeSlot(time)}
@@ -91,12 +95,14 @@ const Booking = props => {
         </div>
       </div>
 
-      {bookingDate && selectedTimeSlot ? (
-        <div>
-          Selected slot: {bookingDate.toDateString()} at {selectedTimeSlot}
-        </div>
-      ) : null}
-    </div>
+      {
+        bookingDate && selectedTimeSlot ? (
+          <div>
+            Selected slot: {bookingDate.toDateString()} at {selectedTimeSlot}
+          </div>
+        ) : null
+      }
+    </div >
   );
 };
 
