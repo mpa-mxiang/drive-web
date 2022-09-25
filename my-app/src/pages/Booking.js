@@ -47,6 +47,8 @@ const Booking = props => {
 
   useEffect(() => {
     // Bail out if there is no date selected
+
+    //no value for bookingDate
     if (!bookingDate) return;
 
     // Get time slots from cache
