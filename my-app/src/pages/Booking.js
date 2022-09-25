@@ -53,7 +53,6 @@ const Booking = props => {
     let newBookingTimes = timeSlotCacheRef.current.get(
       bookingDate.toDateString()
     );
-
     // If we have no cached time slots then pick new ones
     if (!newBookingTimes) {
       newBookingTimes = pickSlotTimes(times);
@@ -72,12 +71,11 @@ const Booking = props => {
   return (
     <div className="k-my-8">
       <div className="k-mb-4 k-font-weight-bold">Book driving slot</div>
-
+      <p>{pickSlotTimes(times)}</p>
       <div className="k-my-8">
-
         <Calendar value={bookingDate} onChange={onDateChange} />
         <div className="k-my-8">
-
+          <p>{bookingTimes}</p>
           {bookingTimes.map(time => {
             //didnt enter here
             return (
