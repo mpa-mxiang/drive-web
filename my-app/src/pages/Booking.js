@@ -84,6 +84,7 @@ const Booking = props => {
                 onClick={e => setSelectedTimeSlot(time)}
               >
                 {time}
+
               </button>
             );
           })}
