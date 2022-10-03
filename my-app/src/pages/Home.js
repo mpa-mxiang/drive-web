@@ -67,7 +67,7 @@ const Home = () => {
         <h2>Call +1(226)972-6161 for more details</h2>
         <Button onClick={navigateToPackage}>Packages and Prices</Button>
 
-        <Button onClick={navigateToCalendar}>Book Your className</Button>
+        <Button onClick={navigateToCalendar}>Book Your class</Button>
 
         <Button onClick={navigateToClients}>Success Clients</Button>
       </div>
