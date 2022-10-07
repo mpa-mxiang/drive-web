@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 import './Booking.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import Time from './Time.js'
 function Booking() {
   const [date, setDate] = useState(new Date());
 
