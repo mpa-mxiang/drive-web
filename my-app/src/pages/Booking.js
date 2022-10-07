@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import './Booking.css';
-<<<<<<< Updated upstream
 
 function Booking() {
   const [date, setDate] = useState(new Date());
@@ -22,11 +21,7 @@ function Booking() {
           prev2Label='<<year'
           prev2AriaLabel='Go to prev year'
         />
-=======
-import React from 'react';
-import DateTimeRangeContainer from 'react-advanced-datetimerange-picker';
-import { FormControl } from 'react-bootstrap';
-import moment from 'moment';
+
 
 class Booking extends React.Component {
   constructor(props) {
@@ -87,7 +82,6 @@ class Booking extends React.Component {
             placeholder="Enter text"
           />
         </DateTimeRangeContainer>
->>>>>>> Stashed changes
       </div>
       <p className='text-center'>
         <span className='bold'>Selected Date:</span>{' '}
