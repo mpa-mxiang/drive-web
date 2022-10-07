@@ -29,6 +29,7 @@
     "availability-calendar-react": "^1.0.10",
     "bootstrap": "^5.1.3",
     "react": "^18.2.0",
+    "react-advanced-datetimerange-picker": "^1.0.14",
     "react-appointment-picker": "^3.2.1",
     "react-big-calendar": "^1.5.0",
     "react-bootstrap": "^2.4.0",
