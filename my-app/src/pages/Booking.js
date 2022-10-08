@@ -4,7 +4,6 @@ import './Booking.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ScheduleMeeting } from "react-schedule-meeting";
-
 const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
   return {
     id,
@@ -33,10 +32,13 @@ export default function Booking() {
       <ScheduleMeeting
         borderRadius={10}
         primaryColor="#3f5b85"
-        eventDurationInMinutes={30}
+        eventDurationInMinutes={120}
         availableTimeslots={availableTimeslots}
         onStartTimeSelect={console.log}
       />
+      <p className='text-center'>
+        <span className='bold'>Selected:</span>{' '}
+      </p>
     </div>
   );
 }
