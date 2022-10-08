@@ -3,6 +3,44 @@ import Calendar from 'react-calendar';
 import './Booking.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { ScheduleMeeting } from "react-schedule-meeting";
+
+const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
+  return {
+    id,
+    startTime: new Date(
+      new Date(new Date().setDate(new Date().getDate() + id)).setHours(
+        9,
+        0,
+        0,
+        0
+      )
+    ),
+    endTime: new Date(
+      new Date(new Date().setDate(new Date().getDate() + id)).setHours(
+        17,
+        0,
+        0,
+        0
+      )
+    )
+  };
+});
+
+export default function Booking() {
+  return (
+    <div className="Bookingpp">
+      <ScheduleMeeting
+        borderRadius={10}
+        primaryColor="#3f5b85"
+        eventDurationInMinutes={30}
+        availableTimeslots={availableTimeslots}
+        onStartTimeSelect={console.log}
+      />
+    </div>
+  );
+}
+/*
 function Booking() {
   const [date, setDate] = useState(new Date());
 
@@ -21,3 +59,4 @@ function Booking() {
   );
 }
 export default Booking;
+*/
