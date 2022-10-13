@@ -56,7 +56,7 @@ export default function Booking() {
       <p className='text-center'>
         <span className='bold'>Selected:</span>{' '}
       </p>
-      <button onClick={notify()}>send message</button>
+      <button onClick={notify()}>SUBMIT</button>
     </div>
   );
 }
