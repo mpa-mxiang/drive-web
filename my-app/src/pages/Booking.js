@@ -4,6 +4,23 @@ import './Booking.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ScheduleMeeting } from "react-schedule-meeting";
+function notify() {
+  fetch('https://textbelt.com/text', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      phone: '6479976478',
+      message: 'test phone message',
+      key: 'textbelt',
+    }),
+  })
+    .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+    });
+}
 const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
   return {
     id,
@@ -39,6 +56,7 @@ export default function Booking() {
       <p className='text-center'>
         <span className='bold'>Selected:</span>{' '}
       </p>
+      <button onClick={notify()}>send message</button>
     </div>
   );
 }

@@ -9,23 +9,7 @@ const About = () => {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
-  function notify() {
-    fetch('https://textbelt.com/text', {
-      method: 'post',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        phone: '6479976478',
-        message: 'test phone message',
-        key: 'textbelt',
-      }),
-    })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-      });
-  }
+
 
   if (!isLoaded) return <div>Loading...</div>;
   return (
@@ -38,9 +22,7 @@ const About = () => {
           Waterloo, Cambridge, Palmerston, and Mount Forest for last 12 years.
         </p>
       </div>
-      <div>
-        <button onClick={notify()}>send message</button>
-      </div>
+
       <div>
         <GoogleMap
           zoom={10}
