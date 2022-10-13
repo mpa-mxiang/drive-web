@@ -4,6 +4,7 @@ import './Booking.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ScheduleMeeting } from "react-schedule-meeting";
+
 function notify() {
   fetch('https://textbelt.com/text', {
     method: 'post',
@@ -54,29 +55,13 @@ export default function Booking() {
         onStartTimeSelect={console.log}
       />
       <p className='text-center'>
-        <span className='bold'>Selected:</span>{' '}
+        <span className='bold'>Selected:</span>
+        <br></br>
+        <button class
+          onClick={notify()}>SUBMIT
+        </button>
       </p>
-      <button onClick={notify()}>SUBMIT</button>
-    </div>
+
+    </div >
   );
 }
-/*
-function Booking() {
-  const [date, setDate] = useState(new Date());
-
-  return (
-    <div className='app'>
-      <h1 className='text-center'>React Calendar</h1>
-      <div className='calendar-container'>
-        <Calendar className='text-center' onChange={setDate} value={date} />
-
-      </div>
-      <p className='text-center'>
-        <span className='bold'>Selected Date:</span>{' '}
-        {date.toDateString()}
-      </p>
-    </div>
-  );
-}
-export default Booking;
-*/
