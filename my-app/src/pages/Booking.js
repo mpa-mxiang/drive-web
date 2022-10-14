@@ -22,6 +22,7 @@ function notify() {
       console.log(data);
     });
 }
+
 const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
   return {
     id,
@@ -45,20 +46,27 @@ const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
 });
 
 export default function Booking() {
+  const [date, setDate] = useState(new Date());
   return (
-    <div className="Bookingpp">
+
+    <div className="Booking">
       <ScheduleMeeting
         borderRadius={10}
         primaryColor="#3f5b85"
         eventDurationInMinutes={120}
         availableTimeslots={availableTimeslots}
         onStartTimeSelect={console.log}
+        onChange={setDate}
+        value={date}
       />
       <p className='text-center'>
         <span className='bold'>Selected:</span>
         <br></br>
-        <button class
-          onClick={notify()}>SUBMIT
+        {date.toDateString()}
+        <br></br>
+        <button
+          onClick={notify()}>
+          SUBMIT
         </button>
       </p>
 
