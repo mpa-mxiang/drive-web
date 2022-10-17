@@ -47,6 +47,7 @@ const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
 
 export default function Booking() {
   const [date, setDate] = useState(new Date());
+  const [timeslot, setTimeslot] = useState(new TimeSlot());
   return (
 
     <div className="Booking">
@@ -55,16 +56,17 @@ export default function Booking() {
         primaryColor="#3f5b85"
         eventDurationInMinutes={120}
         availableTimeslots={availableTimeslots}
-        onStartTimeSelect={console.log}
-        onChange={setDate}
-        value={date}
+        onStartTimeSelect={timeslot}
+        onChange={setDate, setTimeslot}
+        value={date, timeslot}
       />
       <p className='text-center'>
         <span className='bold'>Selected:</span>
         <br></br>
         {date.toDateString()}
         <br></br>
-        <ul>{availableTimeslots}</ul>
+        {timeslot}
+        <br></br>
         <button
           onClick={notify()}>
           SUBMIT
