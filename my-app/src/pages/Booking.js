@@ -64,6 +64,7 @@ export default function Booking() {
         <br></br>
         {date.toDateString()}
         <br></br>
+        <ul>{availableTimeslots}</ul>
         <button
           onClick={notify()}>
           SUBMIT
