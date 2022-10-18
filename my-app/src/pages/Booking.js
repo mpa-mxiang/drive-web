@@ -1,8 +1,5 @@
 import { useState } from 'react';
-import Calendar from 'react-calendar';
 import './Booking.css';
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import { ScheduleMeeting } from "react-schedule-meeting";
 import Time from 'react-time';
 function notify() {
@@ -56,10 +53,10 @@ export default function Booking() {
         primaryColor="#3f5b85"
         eventDurationInMinutes={120}
         availableTimeslots={availableTimeslots}
-        onSelectedDayChange={date, time}
-        onStartTimeSelect={console.log}
-        onChange={setDate, setTime}
-        value={date, time}
+        onSelectedDayChange={date}
+        onStartTimeSelect={time}
+        onChange={[setDate, setTime]}
+        value={[date, time]}
       />
       <p className='text-center'>
         <span className='bold'>Selected:</span>
