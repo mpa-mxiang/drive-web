@@ -4,7 +4,7 @@ import './Booking.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { ScheduleMeeting } from "react-schedule-meeting";
-
+import Time from 'react-time';
 function notify() {
   fetch('https://textbelt.com/text', {
     method: 'post',
@@ -47,7 +47,7 @@ const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
 
 export default function Booking() {
   const [date, setDate] = useState(new Date());
-  const [timeslot, setTimeslot] = useState(new TimeSlot());
+  const [time, setTime] = useState(new Time());
   return (
 
     <div className="Booking">
@@ -56,16 +56,17 @@ export default function Booking() {
         primaryColor="#3f5b85"
         eventDurationInMinutes={120}
         availableTimeslots={availableTimeslots}
-        onStartTimeSelect={timeslot}
-        onChange={setDate, setTimeslot}
-        value={date, timeslot}
+        onSelectedDayChange={date, time}
+        onStartTimeSelect={console.log}
+        onChange={setDate, setTime}
+        value={date, time}
       />
       <p className='text-center'>
         <span className='bold'>Selected:</span>
         <br></br>
         {date.toDateString()}
         <br></br>
-        {timeslot}
+
         <br></br>
         <button
           onClick={notify()}>

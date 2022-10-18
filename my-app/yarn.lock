@@ -12988,6 +12988,11 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-time@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-time/-/react-time-4.3.0.tgz#b37507b8b5278f03a8e7f2bfe70911824a8991dd"
+  integrity sha512-KW4IROr+EMHbAscVi6bIgPZGbgsTp66CZXdFnrkneIOQYG4XHdv4iWA7LPQcqNvVOTMpBEwg+DaQiKPIU9DuHg==
+
 react-transition-group@^4.4.0, react-transition-group@^4.4.2:
   version "4.4.2"
   resolved "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.2.tgz"
