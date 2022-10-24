@@ -22,24 +22,6 @@ const About = () => {
           Waterloo, Cambridge, Palmerston, and Mount Forest for last 12 years.
         </p>
       </div>
-
-      <div>
-        <GoogleMap
-          zoom={10}
-          defaultCenter={{
-            lat: 44,
-            lng: -80,
-          }}
-          mapContainerClassName="map-container"
-        >
-          <Marker
-            position={{
-              lat: 44,
-              lng: -80,
-            }}
-          ></Marker>
-        </GoogleMap>
-      </div>
     </div>
   );
 };
