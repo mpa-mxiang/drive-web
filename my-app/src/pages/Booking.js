@@ -65,10 +65,9 @@ export default function Booking() {
         }}
         onNoFutureTimesAvailable={console.log}
       />
-      <h2>Selected:</h2>
+      <p>Selected:</p>
       <br></br>
-      <h3>{date}</h3>
-      <br></br>
+      <p>{date}</p>
       <br></br>
     </div>
   );
