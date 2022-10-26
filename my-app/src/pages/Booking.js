@@ -1,76 +1,98 @@
 import { useState } from 'react';
 import './Booking.css';
-import { ScheduleMeeting } from "react-schedule-meeting";
+import { ScheduleMeeting } from 'react-schedule-meeting';
+import { format } from 'date-fns';
+import Card from 'react-bootstrap/Card';
 import Time from 'react-time';
-function notify() {
-  fetch('https://textbelt.com/text', {
-    method: 'post',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      phone: '6479976478',
-      message: 'test phone message',
-      key: 'textbelt',
-    }),
-  })
-    .then(response => {
-      return response.json();
-    })
-    .then(data => {
-      console.log(data);
-    });
-}
-
-const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
-  return {
-    id,
-    startTime: new Date(
-      new Date(new Date().setDate(new Date().getDate() + id)).setHours(
-        9,
-        0,
-        0,
-        0
-      )
-    ),
-    endTime: new Date(
-      new Date(new Date().setDate(new Date().getDate() + id)).setHours(
-        17,
-        0,
-        0,
-        0
-      )
-    )
-  };
-});
 
 export default function Booking() {
-  const [date, setDate] = useState(new Date());
-  const [time, setTime] = useState(new Time());
-  return (
+  function notify() {
+    fetch('https://textbelt.com/text', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        phone: '6475463780',
+        message: 'test phone message',
+        key: 'textbelt',
+      }),
+    })
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        console.log(data);
+      });
+  }
 
+  const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
+    return {
+      id,
+      startTime: new Date(
+        new Date(new Date().setDate(new Date().getDate() + id)).setHours(
+          9,
+          0,
+          0,
+          0
+        )
+      ),
+      endTime: new Date(
+        new Date(new Date().setDate(new Date().getDate() + id)).setHours(
+          17,
+          0,
+          0,
+          0
+        )
+      ),
+    };
+  });
+
+  const handleTimeslotClicked = startTimeEventEmit => {
+    alert(
+      `Time selected: ${format(
+        startTimeEventEmit.startTime,
+        'cccc, LLLL do h:mm a'
+      )}`
+    );
+  };
+
+  const [eventDurationInMinutes, setEventDurationInMinutes] = useState(30);
+  const [eventStartTimeSpreadInMinutes, setEventStartTimeSpreadInMinutes] =
+    useState(10);
+
+  return (
     <div className="Booking">
       <ScheduleMeeting
         borderRadius={10}
         primaryColor="#3f5b85"
-        eventDurationInMinutes={120}
+        eventStartTimeSpreadInMinutes={eventStartTimeSpreadInMinutes}
+        eventDurationInMinutes={eventDurationInMinutes}
         availableTimeslots={availableTimeslots}
-        onSelectedDayChange={date}
-        onStartTimeSelect={time}
-        onChange={[setDate, setTime]}
-        value={[date, time]}
+        onStartTimeSelect={handleTimeslotClicked}
+        onNoFutureTimesAvailable={console.log}
       />
-      <p className='text-center'>
-        <span className='bold'>Selected:</span>
-        <br></br>
-        {date.toDateString()}
-        <br></br>
 
-        <br></br>
-        <button
-          onClick={notify()}>
-          SUBMIT
-        </button>
-      </p>
-
-    </div >
+      <Card style={{ width: '20rem' }}>
+        <h5>eventDurationInMinutes</h5>
+        <input
+          value={eventDurationInMinutes}
+          onChange={e => setEventDurationInMinutes(e.target.value)}
+        />
+        <p>The minutes of each event</p>
+      </Card>
+      <Card style={{ width: '20rem' }}>
+        <h5>eventStartTimeSpreadInMinutes</h5>
+        <input
+          value={eventStartTimeSpreadInMinutes}
+          onChange={e => setEventStartTimeSpreadInMinutes(e.target.value)}
+        />
+        <p>
+          The length between the next possible event start time.{' '}
+          <i>
+            Example: For 30, an event start time will be available 30 minutes
+            after the previous event END time.
+          </i>
+        </p>
+      </Card>
+    </div>
   );
 }
