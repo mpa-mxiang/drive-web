@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Booking.css';
 import { ScheduleMeeting } from 'react-schedule-meeting';
 import { format } from 'date-fns';
-
+import validator from 'validator'
 export default function Booking() {
   const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
     return {
@@ -25,17 +25,33 @@ export default function Booking() {
       ),
     };
   });
+  constructor(props) {
+    super(props);
+    this.state = {
+      fullName: null,
+      number: null,
+      errors: {
+        fullName: '',
+        number: '',
+      }
+    };
+  }
+
   const [names, setNames] = useState('');
   const [number, setNumber] = useState('');
+  const [valid, isValid] = useState('');
   const nameHandleChange = event => {
     setNames(event.target.value);
-
-    console.log('value is:', event.target.value);
   };
   const numberHandleChange = event => {
     setNumber(event.target.value);
+    isValid(validatePhoneNumber(event.target.value));
+  };
 
-    console.log('value is:', event.target.value);
+  const validatePhoneNumber = (value) => {
+    let isValidPhoneNumber = validator.isMobilePhone(value, "en-US");
+    console.log(isValidPhoneNumber, value)
+    return isValidPhoneNumber;
   };
   function notify(thisMessage) {
     fetch('https://textbelt.com/text', {
@@ -94,6 +110,7 @@ export default function Booking() {
 
       </div>
       <p>Your name is {names}, your number is {number}.</p>
+      <p>{isValid} Please enter a valid phone number</p>
     </div >
   );
 }
