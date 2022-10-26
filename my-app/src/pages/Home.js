@@ -3,25 +3,6 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
-//import { makeStyles } from "@material-ui/core/styles";
-
-/*
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "20px auto",
-        // margin: "20px"
-    },
-    viewBtn: {
-        position: "relative",
-        top: "160px",
-        margin: "20px auto",
-    }
-}));
-*/
 
 const Home = () => {
   const navigate = useNavigate();
