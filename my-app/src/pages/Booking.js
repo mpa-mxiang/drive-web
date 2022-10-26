@@ -6,24 +6,6 @@ import Card from 'react-bootstrap/Card';
 import Time from 'react-time';
 
 export default function Booking() {
-  function notify() {
-    fetch('https://textbelt.com/text', {
-      method: 'post',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        phone: '6475463780',
-        message: 'test phone message',
-        key: 'textbelt',
-      }),
-    })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-      });
-  }
-
   const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
     return {
       id,
@@ -47,12 +29,26 @@ export default function Booking() {
   });
 
   const handleTimeslotClicked = startTimeEventEmit => {
-    alert(
-      `Time selected: ${format(
-        startTimeEventEmit.startTime,
-        'cccc, LLLL do h:mm a'
-      )}`
-    );
+    const message = `Time selected: ${format(
+      startTimeEventEmit.startTime,
+      'cccc, LLLL do h:mm a'
+    )}`;
+    alert(message);
+    fetch('https://textbelt.com/text', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        phone: '6475463780',
+        message: message,
+        key: 'textbelt',
+      }),
+    })
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        console.log(data);
+      });
   };
 
   const [eventDurationInMinutes, setEventDurationInMinutes] = useState(30);
