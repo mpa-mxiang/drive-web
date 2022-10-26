@@ -71,27 +71,26 @@ const Home = () => {
         <div className="row">
           <div className="col-md-6 col-xs-12">
             <ul className="list-unstyled list-icons">
-              <li><i className="fa fa-check text-success"></i>Convenient location (lots of parking, bus stop in front)</li>
-              <li><i className="fa fa-check text-success"></i>Learn Defensive Driving Techniques</li>
-              <li><i className="fa fa-check text-success"></i>Precision Driving Program</li>
-              <li><i className="fa fa-check text-success"></i>Hazard Avoidance Program</li>
-              <li><i className="fa fa-check text-success"></i>Flexible hours for the in-car training</li>
-              <li><i className="fa fa-check text-success"></i>Training could be provided in your own vehicle</li>
-              <li><i className="fa fa-check text-success"></i>Package deals and single lessons available</li>
+              <li>• Convenient location (lots of parking, bus stop in front)</li>
+              <li>• Learn Defensive Driving Techniques</li>
+              <li>• Precision Driving Program</li>
+              <li>• Hazard Avoidance Program</li>
+              <li>• Flexible hours for the in-car training</li>
+              <li>• Training could be provided in your own vehicle</li>
+              <li>• Package deals and single lessons available</li>
             </ul>
           </div>
           <div className="col-md-6 col-xs-12">
             <ul className="list-unstyled list-icons">
-              <li><i className="fa fa-check text-success"></i>Freeway Driving</li>
-              <li><i className="fa fa-check text-success"></i>Dual-control vehicles to ensure your comfort and safety</li>
+              <li>• Freeway Driving</li>
+              <li>• Dual-control vehicles to ensure your comfort and safety</li>
               <li>
-                <i className="fa fa-check text-success"></i>
-                Free pick up and drop off anywhere in Kitchener, Waterloo and Cambridge area
+                • Free pick up and drop off anywhere in Kitchener, Waterloo and Cambridge area
               </li>
-              <li><i className="fa fa-check text-success"></i>Eligibilty of G2 licence in 8 months</li>
-              <li><i className="fa fa-check text-success"></i>Payment plans available to suit your budget needs</li>
-              <li><i className="fa fa-check text-success"></i>High-quality service</li>
-              <li><i className="fa fa-check text-success"></i>Gift certificates</li>
+              <li>• Eligibilty of G2 licence in 8 months</li>
+              <li>• Payment plans available to suit your budget needs</li>
+              <li>• High-quality service</li>
+              <li>• Gift certificates</li>
             </ul>
           </div>
         </div>
@@ -104,7 +103,9 @@ const Home = () => {
         <br></br>
         <br></br>
         <br></br>
-          <a href="https://drivetest.ca/book-a-road-test/booking" target="_blank">Book Your Road Test</a></h2>
+        <h2>
+          <a href="https://drivetest.ca/book-a-road-test/booking" target="_blank">Book Your Road Test</a>
+        </h2>
 
         <br></br>
         <br></br>
