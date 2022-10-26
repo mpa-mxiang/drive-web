@@ -98,3 +98,7 @@ abbr[title] {
     background: #6f48eb;
     color: white;
 }
+
+p {
+    text-align: center
+}
