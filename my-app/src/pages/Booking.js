@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import ReactDOM from 'react-dom';
 import './Booking.css';
 import { ScheduleMeeting } from 'react-schedule-meeting';
 import { format } from 'date-fns';
-import Card from 'react-bootstrap/Card';
 
 export default function Booking() {
   const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
@@ -67,13 +65,19 @@ export default function Booking() {
       />
       <p>Selected:</p>
       <p>{date}</p>
-      <form>
-        <label>
-          Name:
-          <input type="text" name="name" />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+      <div className="center">
+        <form>
+          <label marginleft="22">
+            Name:
+            <input type="text" name="name" />
+          </label>
+          <label marginleft="22">
+            Phone Number:
+            <input type="text" name="number" />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div >
   );
 }
