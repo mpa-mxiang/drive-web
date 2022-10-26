@@ -78,14 +78,33 @@ export default function Booking() {
         borderRadius={10}
         primaryColor="#3f5b85"
         eventDurationInMinutes={120}
-        eventStartTimeSpreadInMinutes={eventStartTimeSpreadInMinutes}
         eventStartTimeSpreadInMinutes={10}
-        eventDurationInMinutes={10}
         availableTimeslots={availableTimeslots}
         onStartTimeSelect={handleTimeslotClicked}
         onNoFutureTimesAvailable={console.log}
+        availableTimeslots={availableTimeslots}
+        onSelectedDayChange={date}
+        onStartTimeSelect={time}
+        onChange={[setDate, setTime]}
+        value={[date, time]}
       />
-      onStartTimeSelect
+      <p className='text-center'>
+        <span className='bold'>Selected:</span>
+        <br></br>
+        {date.toDateString()}
+        <br></br>
+
+        <br></br>
+        <button
+          onClick={notify()}>
+          SUBMIT
+        </button>
+      </p>
     </div>
+
+
+  
+      </div >
   );
+
 }
