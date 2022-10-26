@@ -1,6 +1,7 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { HiCheckCircle, HiXCircle } from 'react-icons/hi';
+import './Packages.css';
 
 const Packages = () => {
   return (
@@ -53,12 +54,12 @@ const Packages = () => {
           </tr>
           <tr>
             <td>Register to drive at your own schedule/time</td>
-            <td>            <a href="/Calendar" className="btn btn-primary fullwidth text-left">
-              <i className="fa fa-shopping-cart"></i>
+            <td>            <a href="/Calendar">
+
               Register Online
             </a></td>
-            <td>            <a href="/Calendar" className="btn btn-primary fullwidth text-left">
-              <i className="fa fa-shopping-cart"></i>
+            <td>            <a href="/Calendar">
+
               Register Online
             </a></td>
           </tr>
