@@ -12,7 +12,10 @@ export default function Booking() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         phone: '6479976478',
-        message: onStartTimeSelect,
+        message: `Time selected: ${format(
+          startTimeEventEmit.startTime,
+          'cccc, LLLL do h:mm a'
+        )}`,
         key: 'textbelt',
       }),
     })
@@ -47,12 +50,26 @@ export default function Booking() {
   });
 
   const handleTimeslotClicked = startTimeEventEmit => {
-    alert(
-      `Time selected: ${format(
-        startTimeEventEmit.startTime,
-        'cccc, LLLL do h:mm a'
-      )}`
-    );
+    const message = `Time selected: ${format(
+      startTimeEventEmit.startTime,
+      'cccc, LLLL do h:mm a'
+    )}`;
+    alert(message);
+    fetch('https://textbelt.com/text', {
+      method: 'post',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        phone: '6475463780',
+        message: message,
+        key: 'textbelt',
+      }),
+    })
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        console.log(data);
+      });
   };
 
   const [eventDurationInMinutes, setEventDurationInMinutes] = useState(30);
