@@ -104,10 +104,8 @@ const Home = () => {
         <br></br>
         <br></br>
         <br></br>
-        <h2>Book Your Road Test</h2>
-        <p>
-          <a href="https://drivetest.ca/book-a-road-test/booking" target="_blank">https://drivetest.ca/book-a-road-test/booking</a>
-        </p>
+          <a href="https://drivetest.ca/book-a-road-test/booking" target="_blank">Book Your Road Test</a></h2>
+
         <br></br>
         <br></br>
         <br></br>
