@@ -6,12 +6,12 @@ import Card from 'react-bootstrap/Card';
 import Time from 'react-time';
 
 export default function Booking() {
-  function notify(onStartTimeSelect) {
+  function notify() {
     fetch('https://textbelt.com/text', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        phone: '6475463780',
+        phone: '6479976478',
         message: onStartTimeSelect,
         key: 'textbelt',
       }),
@@ -64,13 +64,13 @@ export default function Booking() {
       <ScheduleMeeting
         borderRadius={10}
         primaryColor="#3f5b85"
+        eventDurationInMinutes={120}
         eventStartTimeSpreadInMinutes={eventStartTimeSpreadInMinutes}
-        eventDurationInMinutes={eventDurationInMinutes}
         availableTimeslots={availableTimeslots}
         onStartTimeSelect={handleTimeslotClicked}
         onNoFutureTimesAvailable={console.log}
       />
-      <button>SUBMIT</button>
+      onStartTimeSelect
     </div>
   );
 }
