@@ -6,13 +6,13 @@ import Card from 'react-bootstrap/Card';
 import Time from 'react-time';
 
 export default function Booking() {
-  function notify() {
+  function notify(onStartTimeSelect) {
     fetch('https://textbelt.com/text', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         phone: '6475463780',
-        message: 'test phone message',
+        message: onStartTimeSelect,
         key: 'textbelt',
       }),
     })
@@ -70,29 +70,7 @@ export default function Booking() {
         onStartTimeSelect={handleTimeslotClicked}
         onNoFutureTimesAvailable={console.log}
       />
-
-      <Card style={{ width: '20rem' }}>
-        <h5>eventDurationInMinutes</h5>
-        <input
-          value={eventDurationInMinutes}
-          onChange={e => setEventDurationInMinutes(e.target.value)}
-        />
-        <p>The minutes of each event</p>
-      </Card>
-      <Card style={{ width: '20rem' }}>
-        <h5>eventStartTimeSpreadInMinutes</h5>
-        <input
-          value={eventStartTimeSpreadInMinutes}
-          onChange={e => setEventStartTimeSpreadInMinutes(e.target.value)}
-        />
-        <p>
-          The length between the next possible event start time.{' '}
-          <i>
-            Example: For 30, an event start time will be available 30 minutes
-            after the previous event END time.
-          </i>
-        </p>
-      </Card>
+      <button>SUBMIT</button>
     </div>
   );
 }
