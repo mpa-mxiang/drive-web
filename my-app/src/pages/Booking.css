@@ -102,3 +102,7 @@ abbr[title] {
 p {
     text-align: center
 }
+
+input {
+    border-radius: center;
+}
