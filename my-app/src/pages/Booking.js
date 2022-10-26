@@ -4,28 +4,10 @@ import { ScheduleMeeting } from 'react-schedule-meeting';
 import { format } from 'date-fns';
 import Card from 'react-bootstrap/Card';
 import Time from 'react-time';
-
 export default function Booking() {
-  function notify() {
-    fetch('https://textbelt.com/text', {
-      method: 'post',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        phone: '6479976478',
-        message: `Time selected: ${format(
-          startTimeEventEmit.startTime,
-          'cccc, LLLL do h:mm a'
-        )}`,
-        key: 'textbelt',
-      }),
-    })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-      });
-  }
+  const [date, setDate] = useState(new Date());
+  const [time, setTime] = useState(new Time());
+
 
   const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
     return {
@@ -82,7 +64,6 @@ export default function Booking() {
         availableTimeslots={availableTimeslots}
         onStartTimeSelect={handleTimeslotClicked}
         onNoFutureTimesAvailable={console.log}
-        availableTimeslots={availableTimeslots}
         onSelectedDayChange={date}
         onStartTimeSelect={time}
         onChange={[setDate, setTime]}
@@ -95,16 +76,10 @@ export default function Booking() {
         <br></br>
 
         <br></br>
-        <button
-          onClick={notify()}>
-          SUBMIT
-        </button>
+
       </p>
     </div>
 
-
-  
-      </div >
   );
 
 }
