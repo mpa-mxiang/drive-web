@@ -25,17 +25,7 @@ export default function Booking() {
       ),
     };
   });
-  constructor(props) {
-    super(props);
-    this.state = {
-      fullName: null,
-      number: null,
-      errors: {
-        fullName: '',
-        number: '',
-      }
-    };
-  }
+
 
   const [names, setNames] = useState('');
   const [number, setNumber] = useState('');
