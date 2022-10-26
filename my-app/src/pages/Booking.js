@@ -72,17 +72,18 @@ export default function Booking() {
       });
   };
 
-  const [eventDurationInMinutes, setEventDurationInMinutes] = useState(30);
-  const [eventStartTimeSpreadInMinutes, setEventStartTimeSpreadInMinutes] =
-    useState(10);
-
   return (
     <div className="Booking">
       <ScheduleMeeting
         borderRadius={10}
         primaryColor="#3f5b85"
+<<<<<<< HEAD
         eventDurationInMinutes={120}
         eventStartTimeSpreadInMinutes={eventStartTimeSpreadInMinutes}
+=======
+        eventStartTimeSpreadInMinutes={10}
+        eventDurationInMinutes={10}
+>>>>>>> f63fa263f4a16f08955a72cb8a3a07f130db90b6
         availableTimeslots={availableTimeslots}
         onStartTimeSelect={handleTimeslotClicked}
         onNoFutureTimesAvailable={console.log}
