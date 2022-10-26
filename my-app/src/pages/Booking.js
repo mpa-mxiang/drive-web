@@ -25,7 +25,18 @@ export default function Booking() {
       ),
     };
   });
+  const [names, setNames] = useState('');
+  const [number, setNumber] = useState('');
+  const nameHandleChange = event => {
+    setNames(event.target.value);
 
+    console.log('value is:', event.target.value);
+  };
+  const numberHandleChange = event => {
+    setNumber(event.target.value);
+
+    console.log('value is:', event.target.value);
+  };
   function notify(thisMessage) {
     fetch('https://textbelt.com/text', {
       method: 'post',
@@ -69,15 +80,20 @@ export default function Booking() {
         <form>
           <label marginleft="22">
             Name:
-            <input type="text" name="name" />
+            <input type="text" id="names" name="typedName" onChange={nameHandleChange}
+              value={names} />
           </label>
           <label marginleft="22">
             Phone Number:
-            <input type="text" name="number" />
+            <input type="text" id="number" name="number" onChange={numberHandleChange}
+              value={number} />
           </label>
           <input type="submit" value="Submit" />
         </form>
+
+
       </div>
+      <p>Your name is {names}, your number is {number}.</p>
     </div >
   );
 }
