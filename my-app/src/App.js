@@ -12,8 +12,6 @@ import Navbar from './components/Navbar/Index';
 import About from './pages/About';
 import Clients from './pages/Clients';
 import Packages from './pages/Packages';
-import Register from './pages/Register';
-import '@progress/kendo-theme-default/dist/all.css';
 
 function App() {
   return (
@@ -26,7 +24,6 @@ function App() {
           <Route path="/booking" element={<Booking />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/packages" element={<Packages />} />
-          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
       <footer
