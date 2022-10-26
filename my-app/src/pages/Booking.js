@@ -27,13 +27,7 @@ export default function Booking() {
       ),
     };
   });
-  const [message, setMessage] = useState('');
 
-  const handleChange = event => {
-    setMessage(event.target.value);
-
-    console.log('value is:', event.target.value);
-  };
   function notify(thisMessage) {
     fetch('https://textbelt.com/text', {
       method: 'post',
@@ -72,19 +66,13 @@ export default function Booking() {
         onNoFutureTimesAvailable={console.log}
       />
       <p>Selected:</p>
-      <br></br>
       <p>{date}</p>
-      <br></br>
       <form>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          onChange={handleChange}
-          value={message}
-        />
-
-        <h2>Message: {message}</h2>
+        <label>
+          Name:
+          <input type="text" name="name" />
+        </label>
+        <input type="submit" value="Submit" />
       </form>
     </div>
   );
