@@ -87,7 +87,7 @@ export default function Booking() {
           <label marginleft="22">
             Name:
             <input type="text" id="names" name="typedName" onChange={nameHandleChange}
-              value={names} />
+              value={names}>Enter your name</input>
           </label>
           <label marginleft="22">
             Phone Number:
