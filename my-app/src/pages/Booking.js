@@ -31,11 +31,10 @@ export default function Booking() {
   const [number, setNumber] = useState('');
   const [valid, isValid] = useState('');
   const [pkg, setPackage] = useState('');
-  const nameHandleChange = event => {
-    setNames(event.target.value);
-  };
+  const [g1, setG1] = useState('');
+
   const numberHandleChange = event => {
-    setNumber(event.target.value);
+
     isValid(validatePhoneNumber(event.target.value));
   };
 
@@ -47,7 +46,10 @@ export default function Booking() {
   const handleChange = e => {
     const target = e.target;
     if (target.checked) {
+      setNames(target.value);
+      setNumber(target.value);
       setPackage(target.value);
+      setG1(target.value);
     }
   };
   const handleSubmit = e => {
@@ -96,12 +98,12 @@ export default function Booking() {
         <form onSubmit={handleSubmit}>
           <label>
             Name:
-            <input type="text" id="names" name="typedName" onChange={nameHandleChange}
+            <input type="text" id="names" name="typedName" onChange={handleChange}
               value={names} />
           </label>
           <label>
             Phone Number:
-            <input type="text" id="number" name="number" onChange={numberHandleChange}
+            <input type="text" id="number" name="number" onChange={numberHandleChange, handleChange}
               value={number} />
           </label>
           <p>Choose your package:</p>
@@ -113,6 +115,17 @@ export default function Booking() {
             <label>
               <input type="radio" value="Sliver" checked={pkg === 'Sliver'} onChange={handleChange} />
               <span>Sliver</span>
+            </label>
+          </div>
+          <p>Did you pass G1?</p>
+          <div className="center">
+            <label>
+              <input type="radio" value="Yes" checked={g1 === 'Yes'} onChange={handleChange} />
+              <span>Yes</span>
+            </label>
+            <label>
+              <input type="radio" value="No" checked={pkg === 'No'} onChange={handleChange} />
+              <span>No</span>
             </label>
           </div>
         </form>
