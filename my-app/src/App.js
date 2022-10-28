@@ -34,15 +34,7 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-md-3">
-              <img
-                className="footer-logo"
-                src="/images/logo-white.png"
-                width="126"
-                alt=""
-              ></img>
-
               <p>Call and see why we are different.</p>
-
               <address>
                 <ul className="list-unstyled">
                   <li className="footer-sprite phone">
