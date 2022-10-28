@@ -30,6 +30,7 @@ export default function Booking() {
   const [names, setNames] = useState('');
   const [number, setNumber] = useState('');
   const [valid, isValid] = useState('');
+  const [pkg, setPackage] = useState('');
   const nameHandleChange = event => {
     setNames(event.target.value);
   };
@@ -43,12 +44,21 @@ export default function Booking() {
     console.log(isValidPhoneNumber, value)
     return isValidPhoneNumber;
   };
+  const handleChange = e => {
+    const target = e.target;
+    if (target.checked) {
+      setPackage(target.value);
+    }
+  };
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
   function notify(thisMessage) {
     fetch('https://textbelt.com/text', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        phone: '6475463780',
+        phone: '6479976478',
         message: thisMessage,
         key: 'textbelt',
       }),
@@ -83,24 +93,36 @@ export default function Booking() {
       <p>Selected:</p>
       <p>{date}</p>
       <div className="center">
-        <form>
-          <label marginleft="22">
+        <form onSubmit={handleSubmit}>
+          <label>
             Name:
             <input type="text" id="names" name="typedName" onChange={nameHandleChange}
               value={names} />
           </label>
-          <label marginleft="22">
+          <label>
             Phone Number:
             <input type="text" id="number" name="number" onChange={numberHandleChange}
               value={number} />
           </label>
-          <input type="submit" value="Submit" />
+          <p>Choose your package:</p>
+          <div className="center">
+            <label>
+              <input type="radio" value="Bronze" checked={pkg === 'Bronze'} onChange={handleChange} />
+              <span>Bronze</span>
+            </label>
+            <label>
+              <input type="radio" value="Sliver" checked={pkg === 'Sliver'} onChange={handleChange} />
+              <span>Sliver</span>
+            </label>
+          </div>
         </form>
-
 
       </div>
       <p>Your name is {names}, your number is {number}.</p>
-      <p>{isValid} Please enter a valid phone number</p>
+      <div className="center">
+        <button type="submit">Submit</button>
+      </div>
+
     </div >
   );
 }
