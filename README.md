@@ -1,2 +1,2 @@
 # drive-web
-Things 
+This is a driving school website 
