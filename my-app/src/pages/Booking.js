@@ -99,8 +99,6 @@ export default class SignUpForm extends React.Component {
           availableTimeslots={availableTimeslots}
           /*onStartTimeSelect={() => this.setState({
             date: this.state.date === `Time selected: ${format(date.startTime, 'cccc, LLLL do h:mm a')}`
-            //发信息给手机 uncomment下面那条code就行
-            //notify(date);
           }
           }
           */
@@ -176,7 +174,7 @@ export default class SignUpForm extends React.Component {
               />
               <span>No</span>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" onClick>Submit</button>
 
           </form >
         </div >
