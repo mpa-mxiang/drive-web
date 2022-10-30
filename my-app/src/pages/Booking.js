@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './Booking.css';
 import { ScheduleMeeting } from 'react-schedule-meeting';
 import { format } from 'date-fns';
-import validator from 'validator';
+import validator from 'validator'
 
 const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
   return {
@@ -33,24 +33,20 @@ function validate(name, number, pkg, g1) {
   if (name.length === 0) {
     errors.push("Name can't be empty");
   }
-  if (validator.isAlpha(name)) {
+  if (!validator.isAlpha(name)) {
     errors.push("Please enter a valid name");
   }
   if (number.length === 0) {
     errors.push("Number can't be empty");
   }
-  if (validator.isNumeric(number)) {
+  if (!validator.isNumeric(number)) {
     errors.push("Please enter a valid number");
   }
-  if (pkg === null) {
+  if ((pkg === undefined) || !(pkg == 'Bronze' || pkg == 'Sliver')) {
     errors.push("Please choose a package");
   }
-  if (g1 === null) {
-    errors.push("Please choose if you pass the G1 test");
-  }
-
-  if (g1 === 'No') {
-    errors.push("Please pass G1 first");
+  if ((g1 === undefined) || !(g1 == 'Bronze' || g1 == 'Sliver')) {
+    errors.push("Please choose a package");
   }
 
 
@@ -142,6 +138,9 @@ export default class SignUpForm extends React.Component {
                 onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="Pkg"
+                id='Bronze'
+                name='Bronze'
+
               />
               <span>Bronze</span>
               <input
@@ -149,24 +148,30 @@ export default class SignUpForm extends React.Component {
                 onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="Pkg"
+                id='Sliver'
+                name='Sliver'
               />
               <span>Sliver</span>
-              <input
-                value={this.state.pkg}
-                onChange={evt => this.setState({ pkg: evt.target.value })}
-                type="radio"
-                placeholder="Pkg"
-              />
             </div>
 
             <p>Did you pass G1?</p>
             <div className="center">
+              <input
+                value={this.state.pkg}
+                onChange={evt => this.setState({ pkg: evt.target.value })}
+                type="radio"
+                placeholder="g1"
+                id='Yes'
+                name='Yes'
+              />
               <span>Yes</span>
               <input
                 value={this.state.pkg}
                 onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
-                placeholder="Pkg"
+                placeholder="g1"
+                id='No'
+                name='No'
               />
               <span>No</span>
             </div>
