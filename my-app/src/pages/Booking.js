@@ -110,54 +110,71 @@ export default class SignUpForm extends React.Component {
           onNoFutureTimesAvailable={console.log}
         />
         <p>Selected:</p>
-        <p>{date}</p>
-        <form onSubmit={this.handleSubmit}>
-          {errors.map(error => (
-            <p key={error}>Error: {error}</p>
-          ))}
-          <input
-            value={this.state.name}
-            onChange={evt => this.setState({ name: evt.target.value })}
-            type="text"
-            placeholder="Name"
-          />
-          <input
-            value={this.state.number}
-            onChange={evt => this.setState({ number: evt.target.value })}
-            type="text"
-            placeholder="Number"
-          />
-          <input
-            value={this.state.pkg}
-            onChange={evt => this.setState({ pkg: evt.target.value })}
-            type="radio"
-            placeholder="Pkg"
-          />
-          <span>Bronze</span>
-          <input
-            value={this.state.pkg}
-            onChange={evt => this.setState({ pkg: evt.target.value })}
-            type="radio"
-            placeholder="Pkg"
-          />
-          <span>Sliver</span>
-          <input
-            value={this.state.pkg}
-            onChange={evt => this.setState({ pkg: evt.target.value })}
-            type="radio"
-            placeholder="Pkg"
-          />
-          <span>Yes</span>
-          <input
-            value={this.state.pkg}
-            onChange={evt => this.setState({ pkg: evt.target.value })}
-            type="radio"
-            placeholder="Pkg"
-          />
-          <span>No</span>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+        <div className="center">
+          <form onSubmit={this.handleSubmit}>
+            {errors.map(error => (
+              <p key={error}>Error: {error}</p>
+            ))}
+            <label>
+              Name:
+              <input
+                value={this.state.name}
+                onChange={evt => this.setState({ name: evt.target.value })}
+                type="text"
+                placeholder="Name"
+              />
+            </label>
+            <label>
+              Phone Number:
+              <input
+                value={this.state.number}
+                onChange={evt => this.setState({ number: evt.target.value })}
+                type="text"
+                placeholder="Phone number"
+              />
+            </label>
+
+            <p>Choose your package:</p>
+            <div className="center">
+              <br></br>
+              <input
+                value={this.state.pkg}
+                onChange={evt => this.setState({ pkg: evt.target.value })}
+                type="radio"
+                placeholder="Pkg"
+              />
+              <span>Bronze</span>
+              <input
+                value={this.state.pkg}
+                onChange={evt => this.setState({ pkg: evt.target.value })}
+                type="radio"
+                placeholder="Pkg"
+              />
+              <span>Sliver</span>
+              <input
+                value={this.state.pkg}
+                onChange={evt => this.setState({ pkg: evt.target.value })}
+                type="radio"
+                placeholder="Pkg"
+              />
+            </div>
+
+            <p>Did you pass G1?</p>
+            <div className="center">
+              <span>Yes</span>
+              <input
+                value={this.state.pkg}
+                onChange={evt => this.setState({ pkg: evt.target.value })}
+                type="radio"
+                placeholder="Pkg"
+              />
+              <span>No</span>
+            </div>
+            <button type="submit">Submit</button>
+
+          </form >
+        </div >
+      </div >
     );
   }
 }
