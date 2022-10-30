@@ -1,8 +1,8 @@
-import * as React from "react";
+import * as React from 'react';
 import './Booking.css';
 import { ScheduleMeeting } from 'react-schedule-meeting';
 import { format } from 'date-fns';
-import validator from 'validator'
+import validator from 'validator';
 
 const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
   return {
@@ -32,40 +32,38 @@ function validate(name, number, pkg, g1) {
     errors.push("Name can't be empty");
   }
   if (!validator.isAlpha(name)) {
-    errors.push("Please enter a valid name");
+    errors.push('Please enter a valid name');
   }
   if (number.length === 0) {
     errors.push("Number can't be empty");
   }
   if (!validator.isNumeric(number)) {
-    errors.push("Please enter a valid number");
+    errors.push('Please enter a valid number');
   }
-  if ((pkg === undefined) || !(pkg === 'Bronze' || pkg === 'Sliver')) {
-    errors.push("Please choose a package");
+  if (pkg === undefined || !(pkg === 'Bronze' || pkg === 'Sliver')) {
+    errors.push('Please choose a package');
   }
-  if ((g1 === undefined) || !(g1 === 'Yes' || g1 === 'No')) {
-    errors.push("Please choose if you pass the G1 test");
+  if (g1 === undefined || !(g1 === 'Yes' || g1 === 'No')) {
+    errors.push('Please choose if you pass the G1 test');
   }
   if (g1 === 'No') {
-    errors.push("Please pass G1 first");
+    errors.push('Please pass G1 first');
   }
-
 
   return errors;
 }
 
 export default class SignUpForm extends React.Component {
-
   constructor() {
     super();
     this.state = {
-      name: "",
-      number: "",
-      pkg: "",
-      g1: "",
-      date: "",
+      name: '',
+      number: '',
+      pkg: '',
+      g1: '',
+      date: '',
 
-      errors: []
+      errors: [],
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -87,10 +85,11 @@ export default class SignUpForm extends React.Component {
 
   render() {
     const { errors } = this.state;
-    <button onClick={() => this.setState({ count: this.state.count + 1 })}></button>
+    <button
+      onClick={() => this.setState({ count: this.state.count + 1 })}
+    ></button>;
     return (
-
-      <div className="Booking" >
+      <div className="Booking">
         <ScheduleMeeting
           borderRadius={10}
           primaryColor="#3f5b85"
@@ -139,9 +138,8 @@ export default class SignUpForm extends React.Component {
                 onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="Pkg"
-                id='Bronze'
-                name='Bronze'
-
+                id="Bronze"
+                name="Bronze"
               />
               <span>Bronze</span>
               <input
@@ -149,8 +147,8 @@ export default class SignUpForm extends React.Component {
                 onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="Pkg"
-                id='Sliver'
-                name='Sliver'
+                id="Sliver"
+                name="Sliver"
               />
               <span>Sliver</span>
             </div>
@@ -162,8 +160,8 @@ export default class SignUpForm extends React.Component {
                 onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="g1"
-                id='Yes'
-                name='Yes'
+                id="Yes"
+                name="Yes"
               />
               <span>Yes</span>
               <input
@@ -171,16 +169,15 @@ export default class SignUpForm extends React.Component {
                 onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="g1"
-                id='No'
-                name='No'
+                id="No"
+                name="No"
               />
               <span>No</span>
             </div>
             <button type="submit">Submit</button>
-
-          </form >
-        </div >
-      </div >
+          </form>
+        </div>
+      </div>
     );
   }
 }

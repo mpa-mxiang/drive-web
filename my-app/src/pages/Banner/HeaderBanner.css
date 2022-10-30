@@ -1,0 +1,9 @@
+.header-banner {
+  background-color: red;
+  padding: 20px 0;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  text-rendering: auto;
+}
