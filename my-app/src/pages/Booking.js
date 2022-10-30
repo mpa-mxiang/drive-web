@@ -45,8 +45,11 @@ function validate(name, number, pkg, g1) {
   if ((pkg === undefined) || !(pkg == 'Bronze' || pkg == 'Sliver')) {
     errors.push("Please choose a package");
   }
-  if ((g1 === undefined) || !(g1 == 'Bronze' || g1 == 'Sliver')) {
-    errors.push("Please choose a package");
+  if ((g1 === undefined) || !(g1 == 'Yes' || g1 == 'No')) {
+    errors.push("Please choose if you pass the G1 test");
+  }
+  if (g1 == 'No') {
+    errors.push("Please pass G1 first");
   }
 
 
