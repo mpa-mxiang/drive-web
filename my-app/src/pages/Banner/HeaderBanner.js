@@ -20,7 +20,7 @@ function HeaderBanner() {
             </div>
             <div className="vr" />
             <div>
-              <a>
+              <a href="tel:PHONE_NUM">
                 <FaPhone />
                 <span>+1(226)972-6161</span>
               </a>
