@@ -41,10 +41,10 @@ const About1 = () => {
       </Row>
       <Row>
         <Col sm>
-        <img src={client1} alt="" />
+          <img src={client1} alt="" />
         </Col>
         <Col sm={4}>
-        All of our in-className and in-car instructors are Ministry
+          All of our in-class and in-car instructors are Ministry
           certified. They must undergo annual criminal background checks to
           maintain their teaching privileges. They all have up-to-date knowledge
           of the traffic Law and Regulations.
