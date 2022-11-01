@@ -63,7 +63,7 @@ const Home = () => {
       <div className="container">
         <header className="text-center margin-bottom-60">
           <h2>Reasons Why YOU Should Join Us</h2>
-          <p className="lead font-lato">
+          <p>
             Max's Driving School is one of the most respected driving schools in
             Kitchener. Our unique approach to teaching, one-of-a-kind teaching
             techniques, and efficient program structures make Pioneer Driving
@@ -93,7 +93,7 @@ const Home = () => {
                 • Free pick up and drop off anywhere in Kitchener, Waterloo and
                 Cambridge area
               </li>
-              <li>• Eligibilty of G2 licence in 8 months</li>
+              <li>• Eligibility of G2 license in 8 months</li>
               <li>• Payment plans available to suit your budget needs</li>
               <li>• High-quality service</li>
               <li>• Gift certificates</li>
