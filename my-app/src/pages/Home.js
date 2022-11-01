@@ -112,7 +112,6 @@ const Home = () => {
         <h2>
           <a
             href="https://drivetest.ca/book-a-road-test/booking"
-            target="_blank"
           >
             Book Your Road Test
           </a>
