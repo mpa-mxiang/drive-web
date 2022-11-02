@@ -38,6 +38,7 @@ const Home = () => {
   //const classes = useStyles();
 
   return (
+
     <div className="p-0 box my-0 text-center">
       <HeaderBanner />
       <div className="banner">
@@ -52,11 +53,10 @@ const Home = () => {
             Serving the community to provide a customized lesson plan to ensure
             you are a safe and capable driver
           </h2>
-          <h2>Call
+          <h2>Call for more details:
             <a href="tel:PHONE_NUM">
               +1(226)972-6161
-            </a>
-            for more details</h2>
+            </a></h2>
           <Button onClick={navigateToPackage}>Packages and Prices</Button>
 
           <Button onClick={navigateToCalendar}>Book Your class</Button>
@@ -64,7 +64,17 @@ const Home = () => {
           <Button onClick={navigateToClients}>Success Clients</Button>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
       <About1 />
+      <br></br>
+      <br></br>
+      <br></br>
+      <hr></hr>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="container">
         <header className="text-center margin-bottom-60">
           <h2>Reasons Why YOU Should Join Us</h2>
@@ -127,7 +137,7 @@ const Home = () => {
         <br></br>
       </div>
       <br></br>
-      <br></br>
+      <hr></hr>
       <br></br>
       <Reviews />
     </div>
