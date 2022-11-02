@@ -38,7 +38,6 @@ const Home = () => {
   //const classes = useStyles();
 
   return (
-
     <div className="p-0 box my-0 text-center">
       <HeaderBanner />
       <div className="banner">
@@ -53,10 +52,10 @@ const Home = () => {
             Serving the community to provide a customized lesson plan to ensure
             you are a safe and capable driver
           </h2>
-          <h2>Call for more details:
-            <a href="tel:PHONE_NUM">
-              +1(226)972-6161
-            </a></h2>
+          <h2>
+            Call for more details:
+            <a href="tel:PHONE_NUM">+1(226)972-6161</a>
+          </h2>
           <Button onClick={navigateToPackage}>Packages and Prices</Button>
 
           <Button onClick={navigateToCalendar}>Book Your class</Button>
@@ -125,11 +124,7 @@ const Home = () => {
         <br></br>
         <br></br>
         <h2>
-          <a
-            href="https://drivetest.ca/book-a-road-test/booking"
-          >
-            Book Your Road Test
-          </a>
+          <a href="mailto:webmaster@example.com">Book Your Road Test</a>
         </h2>
 
         <br></br>
