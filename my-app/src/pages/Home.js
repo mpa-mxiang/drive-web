@@ -52,7 +52,11 @@ const Home = () => {
             Serving the community to provide a customized lesson plan to ensure
             you are a safe and capable driver
           </h2>
-          <h2>Call +1(226)972-6161 for more details</h2>
+          <h2>Call
+            <a href="tel:PHONE_NUM">
+              +1(226)972-6161
+            </a>
+            for more details</h2>
           <Button onClick={navigateToPackage}>Packages and Prices</Button>
 
           <Button onClick={navigateToCalendar}>Book Your class</Button>
