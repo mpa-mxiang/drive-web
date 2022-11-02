@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import HeaderBanner from './Banner/HeaderBanner';
 import './Home.css';
 import About1 from '../pages/About/About1';
+import Reviews from '../pages/Reviews/Reviews';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -124,6 +125,7 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
+      <Reviews />
     </div>
   );
 };

@@ -5,20 +5,24 @@ import './Packages.css';
 
 const Packages = () => {
   return (
-
     <div>
       <br></br>
       <Table responsive="sm">
         <thead>
           <tr>
             <th>Course Packages</th>
-            <th>Bronze<br></br><small>HST included</small></th>
+            <th>
+              Bronze<br></br>
+              <small>HST included</small>
+            </th>
 
-            <th>Sliver<br></br><small>HST included</small></th>
+            <th>
+              Sliver<br></br>
+              <small>HST included</small>
+            </th>
           </tr>
         </thead>
         <tbody>
-
           <tr>
             <td>Hours of in-car training</td>
             <td>10</td>
@@ -36,42 +40,53 @@ const Packages = () => {
           </tr>
           <tr>
             <td>Use of instructors Vehicle for road test</td>
-            <td><HiXCircle /></td>
-            <td><HiCheckCircle /></td>
+            <td>
+              <HiXCircle />
+            </td>
+            <td>
+              <HiCheckCircle />
+            </td>
           </tr>
           <tr>
             <td>Practice before test</td>
-            <td><HiXCircle /></td>
-            <td><HiCheckCircle /></td>
+            <td>
+              <HiXCircle />
+            </td>
+            <td>
+              <HiCheckCircle />
+            </td>
           </tr>
           <tr>
             <td>Cost</td>
-            <td><del>740</del>
-              <p>640</p>
+            <td>
+              <del>740</del>
+              <td>640</td>
             </td>
-            <td><del>925</del>
-              <p>775</p></td>
+            <td>
+              <del>925</del>
+              <td>775</td>
+            </td>
           </tr>
           <tr>
             <td>Register to drive at your own schedule/time</td>
-            <td>            <a href="/Calendar">
-
-              Register Online
-            </a></td>
-            <td>            <a href="/Calendar">
-
-              Register Online
-            </a></td>
+            <td>
+              {' '}
+              <a href="/Calendar">Register Online</a>
+            </td>
+            <td>
+              {' '}
+              <a href="/Calendar">Register Online</a>
+            </td>
           </tr>
         </tbody>
-
       </Table>
       <br></br>
       <div className="container">
         <h1>Both prices includes:</h1>
         <div className="row">
           <div className="col-md-6 col-xs-12">
-            <p>Each In-Car Session is at least 60 minutes
+            <p>
+              Each In-Car Session is at least 60 minutes
               <br></br>
               One-on-one In-Car Training
               <br></br>
@@ -103,7 +118,6 @@ const Packages = () => {
               </tr>
             </thead>
             <tbody>
-
               <tr>
                 <td>
                   <h4>One Hour Freeway Driving Lesson</h4>
@@ -111,9 +125,7 @@ const Packages = () => {
                 <td>
                   <h4>$50.00 (HST included)</h4>
                 </td>
-                <td>
-                  Call +1(226)972-6161 to Register
-                </td>
+                <td>Call +1(226)972-6161 to Register</td>
               </tr>
               <tr>
                 <td>
@@ -122,9 +134,7 @@ const Packages = () => {
                 <td>
                   <h4>$90.00 (HST included)</h4>
                 </td>
-                <td>
-                  Call +1(226)972-6161 to Register
-                </td>
+                <td>Call +1(226)972-6161 to Register</td>
               </tr>
               <tr>
                 <td>
@@ -133,21 +143,20 @@ const Packages = () => {
                 </td>
                 <td>
                   <h4>Contact us for pricing</h4>
-
                 </td>
               </tr>
               <tr>
                 <td>
                   <h4>G2 Exit Test</h4>
-                  <p>Two hours in-car training plus use of instructor's vehicle for the road test. </p>
+                  <p>
+                    Two hours in-car training plus use of instructor's vehicle
+                    for the road test.{' '}
+                  </p>
                 </td>
                 <td>
                   <h4>$190.00 (HST included)</h4>
-
                 </td>
-                <td>
-                  Call +1(226)972-6161 to Register
-                </td>
+                <td>Call +1(226)972-6161 to Register</td>
               </tr>
               <tr>
                 <td>
@@ -155,7 +164,6 @@ const Packages = () => {
                 </td>
                 <td>
                   <h4>Contact us for pricing</h4>
-
                 </td>
               </tr>
             </tbody>
@@ -163,10 +171,7 @@ const Packages = () => {
         </div>
       </div>
       <br></br>
-    </div >
-
-
-
+    </div>
   );
 };
 
