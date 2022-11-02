@@ -175,7 +175,9 @@ export default class SignUpForm extends React.Component {
               <p key={error}>Error: {error}</p>
             ))}
           </form >
+
         </div >
+        <br></br>
       </div >
     );
   }
