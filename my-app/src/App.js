@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //import { Container, Row, Col, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import './App.css';
-
+import { FaPhone } from 'react-icons/fa';
 import Booking from './pages/Booking';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
@@ -37,12 +37,14 @@ function App() {
               <address>
                 <ul className="list-unstyled">
                   <li className="footer-sprite phone">
+                    <FaPhone />
                     Phone:{' '}
                     <strong>
                       <span itemProp="telephone">1-226-972-6161</span>
                     </strong>
                   </li>
                   <li className="footer-sprite email">
+
                     <a href="mailto:maxamin@hotmail.com">
                       <span itemProp="email">maxamin@hotmail.com </span>
                     </a>
