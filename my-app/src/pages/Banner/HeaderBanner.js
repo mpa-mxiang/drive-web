@@ -26,12 +26,6 @@ function HeaderBanner() {
               </a>
             </div>
             <div className="vr" />
-            <div>
-              <a>
-                <FaAddressBook />
-                <span>Contact</span>
-              </a>
-            </div>
           </Stack>
         </div>
       </Container>
