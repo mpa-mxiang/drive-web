@@ -4,7 +4,8 @@
   width: auto;
   max-width: 65px;
 }
-.info-box{
+.info-box {
+  display: block;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
