@@ -70,6 +70,7 @@ let NewCard = () => {
 const Reviews = () => {
   return (
     <Container>
+      <h1>Reviews</h1>
       <NewCard />
     </Container>
   );
