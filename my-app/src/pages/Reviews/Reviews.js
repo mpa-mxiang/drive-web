@@ -54,10 +54,12 @@ let NewCard = () => {
         return (
           <Col sm={6} md={4} className="mt-3">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={props.imgsrc} />
               <Card.Body>
-                <Card.Title>{props.author}</Card.Title>
-                <Card.Text>{props.content}</Card.Text>
+                <div className="info-box">
+                  <img src={props.imgsrc} alt="beer" className="reviews-img" />
+                  <Card.Title>{props.author}</Card.Title>
+                  <Card.Text>{props.content}</Card.Text>
+                </div>
               </Card.Body>
             </Card>
           </Col>

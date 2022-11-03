@@ -1,0 +1,11 @@
+.reviews-img {
+  height: auto;
+  max-height: 65px;
+  width: auto;
+  max-width: 65px;
+}
+.info-box{
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
