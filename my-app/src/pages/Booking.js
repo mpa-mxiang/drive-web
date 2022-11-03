@@ -105,7 +105,6 @@ export default class SignUpForm extends React.Component {
         <p>Selected:</p>
         <div className="center">
           <form onSubmit={this.handleSubmit}>
-
             <label>
               Name:
               <input
@@ -169,15 +168,18 @@ export default class SignUpForm extends React.Component {
               />
               <span>No</span>
             </div>
-            <button type="submit" onClick>Submit</button>
-            {errors.map(error => (
-              <p key={error}>Error: {error}</p>
-            ))}
-          </form >
-
-        </div >
+            <div className="center">
+              <button type="submit" onClick>
+                Submit
+              </button>
+              {errors.map(error => (
+                <p key={error}>Error: {error}</p>
+              ))}
+            </div>
+          </form>
+        </div>
         <br></br>
-      </div >
+      </div>
     );
   }
 }
