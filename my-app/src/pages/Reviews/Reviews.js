@@ -85,8 +85,10 @@ let NewCard = () => {
 const Reviews = () => {
   return (
     <Container>
-      <h1>Reviews</h1>
-      <NewCard />
+      <div className="review-box">
+        <h1>Reviews</h1>
+        <NewCard />
+      </div>
     </Container>
   );
 };
