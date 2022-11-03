@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
+import { Col, Container, Row, Card } from 'react-bootstrap';
 import './Reviews.css';
 
 const data = [
@@ -50,26 +47,32 @@ const data = [
   },
 ];
 
-const CardView = ({
-  author = 'Default Title',
-  imgsrc = 'default_holder.js/100px180',
-  content = 'Default Content',
-}) => (
-  <Container>
+let NewCard = () => {
+  return (
     <Row>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={imgsrc} />
-        <Card.Body>
-          <Card.Title>{author}</Card.Title>
-          <Card.Text>{content}</Card.Text>
-        </Card.Body>
-      </Card>
+      {data.map(props => {
+        return (
+          <Col sm={6} md={4} className="mt-3">
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src={props.imgsrc} />
+              <Card.Body>
+                <Card.Title>{props.author}</Card.Title>
+                <Card.Text>{props.content}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        );
+      })}
     </Row>
-  </Container>
-);
+  );
+};
 
 const Reviews = () => {
-  return data.map((i, index) => <CardView key={index} {...i} />);
+  return (
+    <Container>
+      <NewCard />
+    </Container>
+  );
 };
 
 export default Reviews;
