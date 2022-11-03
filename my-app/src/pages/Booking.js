@@ -82,9 +82,11 @@ export default class SignUpForm extends React.Component {
 
     // submit the data...
   }
+  /*
   handleTimeslotClicked = (startTimeEventEmit) => {
     alert('Time selected: ${format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a')}');
   };
+  */
   render() {
     const { errors } = this.state;
     <button
@@ -98,8 +100,9 @@ export default class SignUpForm extends React.Component {
           eventDurationInMinutes={120}
           eventStartTimeSpreadInMinutes={0}
           availableTimeslots={availableTimeslots}
+          /*
           onStartTimeSelect={handleTimeslotClicked}
-
+          */
           onNoFutureTimesAvailable={console.log}
         />
         <p>Selected:</p>
@@ -172,10 +175,11 @@ export default class SignUpForm extends React.Component {
               <button type="submit" onClick>
                 Submit
               </button>
-              {errors.map(error => (
-                <p key={error}>Error: {error}</p>
-              ))}
+
             </div>
+            {errors.map(error => (
+              <p key={error}>Error: {error}</p>
+            ))}
           </form>
         </div>
         <br></br>
