@@ -62,7 +62,6 @@ export default class SignUpForm extends React.Component {
       pkg: '',
       g1: '',
       date: '',
-
       errors: [],
     };
 
@@ -72,9 +71,9 @@ export default class SignUpForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    const { name, number, pkg, g1 } = this.state;
+    const { name, number, pkg, g1, date } = this.state;
 
-    const errors = validate(name, number, [pkg, g1]);
+    const errors = validate(name, number, pkg, g1);
     if (errors.length > 0) {
       this.setState({ errors });
       return;
@@ -82,11 +81,10 @@ export default class SignUpForm extends React.Component {
 
     // submit the data...
   }
-  /*
-  handleTimeslotClicked = (startTimeEventEmit) => {
-    alert('Time selected: ${format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a')}');
-  };
-  */
+  handleDate = (date) => {
+    return format(date.startTime, 'cccc, LLLL do h:mm a')
+  }
+
   render() {
     const { errors } = this.state;
     <button
@@ -100,12 +98,9 @@ export default class SignUpForm extends React.Component {
           eventDurationInMinutes={120}
           eventStartTimeSpreadInMinutes={0}
           availableTimeslots={availableTimeslots}
-          /*
-          onStartTimeSelect={handleTimeslotClicked}
-          */
+          onStartTimeSelect={evt => this.setState({ date: evt.startTime.setDate })}
           onNoFutureTimesAvailable={console.log}
         />
-        <p>Selected:</p>
         <div className="center">
           <form onSubmit={this.handleSubmit}>
             <label>
@@ -171,6 +166,8 @@ export default class SignUpForm extends React.Component {
               />
               <span>No</span>
             </div>
+            <p>Selected:</p>
+            <p>{this.state.date}</p>
             <div className="center">
               <button type="submit" onClick>
                 Submit
