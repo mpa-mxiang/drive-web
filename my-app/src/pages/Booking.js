@@ -37,13 +37,13 @@ function validate(name, number, pkg, g1) {
   if (number.length === 0) {
     errors.push("Number can't be empty");
   }
-  if (!validator.isNumeric(number)) {
+  if (!validator.isNumeric(number) && number.length < 10) {
     errors.push('Please enter a valid number');
   }
-  if (pkg === undefined || !(pkg === 'Bronze' || pkg === 'Sliver')) {
+  if (pkg === undefined || !(pkg === 'Bronze') || !(pkg === 'Sliver')) {
     errors.push('Please choose a package');
   }
-  if (g1 === undefined || !(g1 === 'Yes' || g1 === 'No')) {
+  if (g1 === undefined || !(g1 === 'Yes') || !(g1 === 'No')) {
     errors.push('Please choose if you pass the G1 test');
   }
   if (g1 === 'No') {
@@ -57,7 +57,7 @@ function notify(name, number, thisMessage, date) {
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      phone: '6475463780',
+      phone: '6479976478',
       message: thisMessage + date,
       key: 'textbelt',
     }),
@@ -93,6 +93,7 @@ export default class SignUpForm extends React.Component {
     const errors = validate(name, number, pkg, g1);
     if (errors.length > 0) {
       this.setState({ errors });
+      <p key={errors}>Error: {errors}</p>
 
     }
     // submit the data...
@@ -109,6 +110,7 @@ export default class SignUpForm extends React.Component {
     return;
   }
   render() {
+    const { errors } = this.state;
     return (
       <div className="Booking">
         <ScheduleMeeting
@@ -142,26 +144,23 @@ export default class SignUpForm extends React.Component {
             </label>
 
             <p>Choose your package:</p>
-            <div className="center">
+            <div className="center" onChange={evt => this.setState({ pkg: evt.target.value })}>
               <br></br>
               <input
                 value={this.state.pkg}
-                onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="Pkg"
                 id="Bronze"
                 name="Bronze"
-              />
-              <span>Bronze</span>
+              />Bronze
               <input
                 value={this.state.pkg}
-                onChange={evt => this.setState({ pkg: evt.target.value })}
+                onClick={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="Pkg"
                 id="Sliver"
                 name="Sliver"
-              />
-              <span>Sliver</span>
+              />Sliver
             </div>
 
             <p>Did you pass G1?</p>
@@ -186,14 +185,16 @@ export default class SignUpForm extends React.Component {
               <span>No</span>
             </div>
             <p>Info confirmation:</p>
-            <p></p>
+            <p>Your name is {this.state.name}, your number is {this.state.number}, you selected {this.state.date} with {this.state.pkg}</p>
             <div className="center">
               <button type="submit" onClick={this.handleSubmit}>
                 Submit
               </button>
 
             </div>
-
+            {errors.map(error => (
+              <p key={error}>Error: {error}</p>
+            ))}
           </form>
         </div >
         <br></br>
