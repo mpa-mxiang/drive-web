@@ -52,6 +52,23 @@ function validate(name, number, pkg, g1) {
 
   return errors;
 }
+function notify(thisMessage) {
+  fetch('https://textbelt.com/text', {
+    method: 'post',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      phone: '6475463780',
+      message: thisMessage,
+      key: 'textbelt',
+    }),
+  })
+    .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+    });
+}
 
 export default class SignUpForm extends React.Component {
   constructor() {
