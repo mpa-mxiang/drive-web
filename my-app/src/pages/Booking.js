@@ -40,10 +40,10 @@ function validate(name, number, pkg, g1) {
   if (!validator.isNumeric(number) && number.length < 10) {
     errors.push('Please enter a valid number');
   }
-  if (pkg === undefined || !(pkg === 'Bronze') || !(pkg === 'Sliver')) {
+  if (pkg.length === 0 || !(pkg === 'Bronze') || !(pkg === 'Sliver')) {
     errors.push('Please choose a package');
   }
-  if (g1 === undefined || !(g1 === 'Yes') || !(g1 === 'No')) {
+  if (g1.length === 0 || !(g1 === 'Yes') || !(g1 === 'No')) {
     errors.push('Please choose if you pass the G1 test');
   }
   if (g1 === 'No') {
@@ -121,8 +121,7 @@ export default class SignUpForm extends React.Component {
           availableTimeslots={availableTimeslots}
           onStartTimeSelect={this.handleDate}
           onNoFutureTimesAvailable={console.log}
-        />
-        <div className="center">
+        />        <div className="center">
           <form onSubmit={this.handleSubmit}>
             <label>
               Name:
@@ -145,22 +144,28 @@ export default class SignUpForm extends React.Component {
 
             <p>Choose your package:</p>
             <div className="center" onChange={evt => this.setState({ pkg: evt.target.value })}>
-              <br></br>
-              <input
-                value={this.state.pkg}
-                type="radio"
-                placeholder="Pkg"
-                id="Bronze"
-                name="Bronze"
-              />Bronze
-              <input
-                value={this.state.pkg}
-                onClick={evt => this.setState({ pkg: evt.target.value })}
-                type="radio"
-                placeholder="Pkg"
-                id="Sliver"
-                name="Sliver"
-              />Sliver
+              <label>
+                <input
+                  value={this.state.pkg}
+                  type="radio"
+                  placeholder="Pkg"
+                  id="Bronze"
+                  name="Bronze"
+                  checked={this.state.pkg === ""}
+                  onChange={this.setState({ pkg: 'Bronze' })}
+                />Bronze
+              </label>
+              <label>
+                <input
+                  value={this.state.pkg}
+                  type="radio"
+                  placeholder="Pkg"
+                  id="Sliver"
+                  name="Sliver"
+                  checked={this.state.pkg === ''}
+                  onChange={this.setState({ pkg: 'Sliver' })}
+                />Sliver
+              </label>
             </div>
 
             <p>Did you pass G1?</p>
@@ -192,10 +197,12 @@ export default class SignUpForm extends React.Component {
               </button>
 
             </div>
-            {errors.map(error => (
-              <p key={error}>Error: {error}</p>
-            ))}
-          </form>
+            {
+              errors.map(error => (
+                <p key={error}>Error: {error}</p>
+              ))
+            }
+          </form >
         </div >
         <br></br>
       </div >
