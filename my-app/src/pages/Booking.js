@@ -81,15 +81,12 @@ export default class SignUpForm extends React.Component {
 
     // submit the data...
   }
-  handleDate = (date) => {
-    return format(date.startTime, 'cccc, LLLL do h:mm a')
+  handleDate = (startTimeEventEmit) => {
+    this.setState({ date: format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a') });
+    return;
   }
-
   render() {
     const { errors } = this.state;
-    <button
-      onClick={() => this.setState({ count: this.state.count + 1 })}
-    ></button>;
     return (
       <div className="Booking">
         <ScheduleMeeting
@@ -98,7 +95,7 @@ export default class SignUpForm extends React.Component {
           eventDurationInMinutes={120}
           eventStartTimeSpreadInMinutes={0}
           availableTimeslots={availableTimeslots}
-          onStartTimeSelect={evt => this.setState({ date: evt.startTime.onChange })}
+          onStartTimeSelect={this.handleDate}
           onNoFutureTimesAvailable={console.log}
         />
         <div className="center">
@@ -166,8 +163,8 @@ export default class SignUpForm extends React.Component {
               />
               <span>No</span>
             </div>
-            <p>Selected:</p>
-            <p>{this.state.date}</p>
+            <p>Info confirmation:</p>
+            <p>Your name is {this.state.name}, your number is {this.state.number}, you selected {this.state.date}</p>
             <div className="center">
               <button type="submit" onClick>
                 Submit
