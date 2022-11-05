@@ -52,13 +52,13 @@ function validate(name, number, pkg, g1) {
 
   return errors;
 }
-function notify(thisMessage) {
+function notify(name, number, thisMessage, date) {
   fetch('https://textbelt.com/text', {
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       phone: '6475463780',
-      message: thisMessage,
+      message: thisMessage + date,
       key: 'textbelt',
     }),
   })
@@ -69,6 +69,7 @@ function notify(thisMessage) {
       console.log(data);
     });
 }
+
 
 export default class SignUpForm extends React.Component {
   constructor() {
@@ -89,21 +90,25 @@ export default class SignUpForm extends React.Component {
     e.preventDefault();
 
     const { name, number, pkg, g1, date } = this.state;
-
     const errors = validate(name, number, pkg, g1);
     if (errors.length > 0) {
       this.setState({ errors });
-      return;
-    }
 
+    }
     // submit the data...
+    else {
+      notify(name, number, 'This is the confirmation for your booking on ', date);
+    }
+    return
+
+
   }
+
   handleDate = (startTimeEventEmit) => {
     this.setState({ date: format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a') });
     return;
   }
   render() {
-    const { errors } = this.state;
     return (
       <div className="Booking">
         <ScheduleMeeting
@@ -181,20 +186,18 @@ export default class SignUpForm extends React.Component {
               <span>No</span>
             </div>
             <p>Info confirmation:</p>
-            <p>Your name is {this.state.name}, your number is {this.state.number}, you selected {this.state.date}</p>
+            <p></p>
             <div className="center">
-              <button type="submit" onClick>
+              <button type="submit" onClick={this.handleSubmit}>
                 Submit
               </button>
 
             </div>
-            {errors.map(error => (
-              <p key={error}>Error: {error}</p>
-            ))}
+
           </form>
-        </div>
+        </div >
         <br></br>
-      </div>
+      </div >
     );
   }
 }
