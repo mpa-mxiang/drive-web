@@ -98,7 +98,7 @@ export default class SignUpForm extends React.Component {
           eventDurationInMinutes={120}
           eventStartTimeSpreadInMinutes={0}
           availableTimeslots={availableTimeslots}
-          onStartTimeSelect={evt => this.setState({ date: evt.startTime.setDate })}
+          onStartTimeSelect={evt => this.setState({ date: evt.startTime.onChange })}
           onNoFutureTimesAvailable={console.log}
         />
         <div className="center">
