@@ -123,25 +123,47 @@ export default class SignUpForm extends React.Component {
         />
         <div className="center">
           <form onSubmit={this.handleSubmit}>
-            <label>
-              Name:
+            <div className="center">
+              <label>
+                Name:
+                <input
+                  value={this.state.name}
+                  onChange={evt => this.setState({ name: evt.target.value })}
+                  type="text"
+                  placeholder="Name"
+                />
+              </label>
+              <label>
+                Phone Number:
+                <input
+                  value={this.state.number}
+                  onChange={evt => this.setState({ number: evt.target.value })}
+                  type="text"
+                  placeholder="Phone number"
+                />
+              </label>
+            </div>
+            <p>Did you pass G1?</p>
+            <div className="center" onChange={evt => this.setState({ g1: evt.target.value })}>
               <input
-                value={this.state.name}
-                onChange={evt => this.setState({ name: evt.target.value })}
-                type="text"
-                placeholder="Name"
-              />
-            </label>
-            <label>
-              Phone Number:
+                value="Yes"
+                onChange={evt => this.setState({ g1: evt.target.value })}
+                type="radio"
+                placeholder="g1"
+                id="Yes"
+                name="Yes"
+                checked={this.state.g1 === 'Yes'}
+              />Yes
               <input
-                value={this.state.number}
-                onChange={evt => this.setState({ number: evt.target.value })}
-                type="text"
-                placeholder="Phone number"
-              />
-            </label>
-
+                value="No"
+                onChange={evt => this.setState({ g1: evt.target.value })}
+                type="radio"
+                placeholder="g1"
+                id="No"
+                name="No"
+                checked={this.state.g1 === 'No'}
+              />No
+            </div>
             <p>Choose your package:</p>
 
             <div className="center" onChange={evt => this.setState({ pkg: evt.target.value })}>
@@ -164,27 +186,7 @@ export default class SignUpForm extends React.Component {
               />Sliver
             </div>
 
-            <p>Did you pass G1?</p>
-            <div className="center" onChange={evt => this.setState({ pkg: evt.target.value })}>
-              <input
-                value="Yes"
-                onChange={evt => this.setState({ g1: evt.target.value })}
-                type="radio"
-                placeholder="g1"
-                id="Yes"
-                name="Yes"
-              />
-              <span>Yes</span>
-              <input
-                value="No"
-                onChange={evt => this.setState({ g1: evt.target.value })}
-                type="radio"
-                placeholder="g1"
-                id="No"
-                name="No"
-              />
-              <span>No</span>
-            </div>
+
             <p>Info confirmation:</p>
             <p>Your name is {this.state.name}, your number is {this.state.number}, you selected {this.state.date} with {this.state.pkg}</p>
             <div className="center">
