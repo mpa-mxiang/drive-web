@@ -32,25 +32,24 @@ function App() {
       >
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
-              <p>Call and see why we are different.</p>
-              <address>
-                <ul className="list-unstyled">
-                  <li className="footer-sprite phone">
-                    <FaPhone />
-                    Phone:{' '}
-                    <strong>
-                      <span itemProp="telephone">1-226-972-6161</span>
-                    </strong>
-                  </li>
-                  <li className="footer-sprite email">
 
-                    <a href="mailto:maxamin@hotmail.com">
-                      <span itemProp="email">maxamin@hotmail.com </span>
-                    </a>
-                  </li>
-                </ul>
-              </address>
+            <div className="col-md-3">
+              <span>Call and see why we are different.</span>
+              <ul className="list-unstyled">
+                <li className="footer-sprite phone">
+                  <FaPhone />
+                  Phone:{' '}
+                  <strong>
+                    <span itemProp="telephone">1-226-972-6161</span>
+                  </strong>
+                </li>
+                <li className="footer-sprite email">
+
+                  <a href="mailto:maxamin@hotmail.com">
+                    <span itemProp="email">maxamin@hotmail.com </span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="col-md-3">
               <h4 className="letter-spacing-1">EXPLORE OUR SITE</h4>
