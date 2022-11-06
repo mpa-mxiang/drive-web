@@ -147,20 +147,20 @@ export default class SignUpForm extends React.Component {
             <div className="center" onChange={evt => this.setState({ pkg: evt.target.value })}>
               <br></br>
               <input
-                value={this.state.pkg}
-                onChange={evt => this.setState({ pkg: evt.target.value })}
+                value="Bronze"
                 type="radio"
                 placeholder="Pkg"
                 id="Bronze"
                 name="Bronze"
+                checked={this.state.pkg === 'Bronze'}
               />Bronze
               <input
-                value={this.state.pkg}
-                onChange={evt => this.setState({ pkg: evt.target.value })}
+                value="Sliver"
                 type="radio"
                 placeholder="Pkg"
                 id="Sliver"
                 name="Sliver"
+                checked={this.state.pkg === 'Sliver'}
               />Sliver
             </div>
 
@@ -168,7 +168,7 @@ export default class SignUpForm extends React.Component {
             <div className="center">
               <input
                 value={this.state.pkg}
-                onChange={evt => this.setState({ pkg: evt.target.value })}
+                onChange={evt => this.setState({ g1: evt.target.value })}
                 type="radio"
                 placeholder="g1"
                 id="Yes"
@@ -177,7 +177,7 @@ export default class SignUpForm extends React.Component {
               <span>Yes</span>
               <input
                 value={this.state.pkg}
-                onChange={evt => this.setState({ pkg: evt.target.value })}
+                onChange={evt => this.setState({ g1: evt.target.value })}
                 type="radio"
                 placeholder="g1"
                 id="No"
