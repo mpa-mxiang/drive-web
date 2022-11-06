@@ -39,10 +39,10 @@ function validate(name, number, pkg, g1) {
   if (!validator.isNumeric(number) && number.length < 10) {
     errors.push('Please enter a valid number');
   }
-  if (pkg === undefined || !(pkg === 'Bronze') || !(pkg === 'Sliver')) {
+  if (pkg.length === 0) {
     errors.push('Please choose a package');
   }
-  if (g1 === undefined || !(g1 === 'Yes') || !(g1 === 'No')) {
+  if (g1.length === 0) {
     errors.push('Please choose if you pass the G1 test');
   }
   if (g1 === 'No') {
