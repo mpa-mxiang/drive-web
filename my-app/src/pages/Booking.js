@@ -3,7 +3,10 @@ import './Booking.css';
 import { ScheduleMeeting } from 'react-schedule-meeting';
 import { format } from 'date-fns';
 import validator from 'validator';
-
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import { useRadioGroup } from '@mui/material/RadioGroup';
 const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
   return {
     id,
@@ -104,7 +107,10 @@ export default class SignUpForm extends React.Component {
 
 
   }
-
+  handlePkgClick = (value) => {
+    this.setState({ pkg: value });
+    return;
+  }
   handleDate = (startTimeEventEmit) => {
     this.setState({ date: format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a') });
     return;
@@ -143,30 +149,16 @@ export default class SignUpForm extends React.Component {
             </label>
 
             <p>Choose your package:</p>
-            <div className="center" onChange={evt => this.setState({ pkg: evt.target.value })}>
-              <label>
-                <input
-                  value={this.state.pkg}
-                  type="radio"
-                  placeholder="Pkg"
-                  id="Bronze"
-                  name="Bronze"
-                  checked={this.state.pkg === ""}
-                  onChange={this.setState({ pkg: 'Bronze' })}
-                />Bronze
-              </label>
-              <label>
-                <input
-                  value={this.state.pkg}
-                  type="radio"
-                  placeholder="Pkg"
-                  id="Sliver"
-                  name="Sliver"
-                  checked={this.state.pkg === ''}
-                  onChange={this.setState({ pkg: 'Sliver' })}
-                />Sliver
-              </label>
-            </div>
+            <RadioGroup
+              aria-labelledby="demo-error-radios"
+              name="pkg"
+              value={this.pkg}
+              onChange={this.handlePkgClick}
+            >
+              <FormControlLabel value="Bronze" control={<Radio />} label="Bronze" />
+              <FormControlLabel value="Sliver" control={<Radio />} label="Sliver" />
+            </RadioGroup>
+
 
             <p>Did you pass G1?</p>
             <div className="center">
@@ -209,3 +201,4 @@ export default class SignUpForm extends React.Component {
     );
   }
 }
+

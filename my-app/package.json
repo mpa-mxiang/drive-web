@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.12",
     "@progress/kendo-data-query": "^1.6.0",
     "@progress/kendo-date-math": "^1.5.7",
     "@progress/kendo-drawing": "^1.17.1",
