@@ -71,11 +71,11 @@ const Packages = () => {
             <td>Register to drive at your own schedule/time</td>
             <td>
               {' '}
-              <a href="/Calendar">Register Online</a>
+              <a href="/Booking">Register Online</a>
             </td>
             <td>
               {' '}
-              <a href="/Calendar">Register Online</a>
+              <a href="/Booking">Register Online</a>
             </td>
           </tr>
         </tbody>
