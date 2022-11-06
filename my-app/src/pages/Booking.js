@@ -165,9 +165,9 @@ export default class SignUpForm extends React.Component {
             </div>
 
             <p>Did you pass G1?</p>
-            <div className="center">
+            <div className="center" onChange={evt => this.setState({ pkg: evt.target.value })}>
               <input
-                value={this.state.pkg}
+                value="Yes"
                 onChange={evt => this.setState({ g1: evt.target.value })}
                 type="radio"
                 placeholder="g1"
@@ -176,7 +176,7 @@ export default class SignUpForm extends React.Component {
               />
               <span>Yes</span>
               <input
-                value={this.state.pkg}
+                value="No"
                 onChange={evt => this.setState({ g1: evt.target.value })}
                 type="radio"
                 placeholder="g1"
