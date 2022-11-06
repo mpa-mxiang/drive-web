@@ -107,10 +107,15 @@ export default class SignUpForm extends React.Component {
 
 
   }
-  handlePkgClick = (value) => {
-    this.setState({ pkg: value });
-    return;
-  }
+  handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (this.value === 'Bronze') {
+      this.setState({ pkg: 'Bronze' });
+    } else if (this.value === 'Sliver') {
+      this.setState({ pkg: 'Sliver' });
+    }
+  };
   handleDate = (startTimeEventEmit) => {
     this.setState({ date: format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a') });
     return;
