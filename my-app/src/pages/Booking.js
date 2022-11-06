@@ -3,10 +3,6 @@ import './Booking.css';
 import { ScheduleMeeting } from 'react-schedule-meeting';
 import { format } from 'date-fns';
 import validator from 'validator';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import { useRadioGroup } from '@mui/material/RadioGroup';
 const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
   return {
     id,
@@ -107,15 +103,7 @@ export default class SignUpForm extends React.Component {
 
 
   }
-  handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
 
-    if (this.value === 'Bronze') {
-      this.setState({ pkg: 'Bronze' });
-    } else if (this.value === 'Sliver') {
-      this.setState({ pkg: 'Sliver' });
-    }
-  };
   handleDate = (startTimeEventEmit) => {
     this.setState({ date: format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a') });
     return;
@@ -160,6 +148,7 @@ export default class SignUpForm extends React.Component {
               <br></br>
               <input
                 value={this.state.pkg}
+                onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="Pkg"
                 id="Bronze"
@@ -167,7 +156,7 @@ export default class SignUpForm extends React.Component {
               />Bronze
               <input
                 value={this.state.pkg}
-                onClick={evt => this.setState({ pkg: evt.target.value })}
+                onChange={evt => this.setState({ pkg: evt.target.value })}
                 type="radio"
                 placeholder="Pkg"
                 id="Sliver"
