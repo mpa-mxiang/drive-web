@@ -40,7 +40,9 @@ function App() {
                   <FaPhone />
                   Phone:{' '}
                   <strong>
-                    <span itemProp="telephone">1-226-972-6161</span>
+                    <span>
+                      <a href="tel:PHONE_NUM">1-226-972-6161</a>
+                    </span>
                   </strong>
                 </li>
                 <li className="footer-sprite email">
@@ -64,7 +66,7 @@ function App() {
                   <a href="/packages">Packages</a>
                 </li>
                 <li>
-                  <a href="/time">Calendar</a>
+                  <a href="/Booking">Calendar</a>
                 </li>
                 <li>
                   <a href="/clients">Success Clients</a>
