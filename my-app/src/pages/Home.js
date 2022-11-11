@@ -42,10 +42,6 @@ const Home = () => {
       <HeaderBanner />
       <div className="banner">
         <div className="banner-info">
-          <p>
-            The #1 Choice for all ages in the Kitchener-Waterloo and Cambridge
-            area
-          </p>
           <h1>Max's Driving School</h1>
           <br />
           <h2>
@@ -63,27 +59,30 @@ const Home = () => {
           <Button onClick={navigateToClients}>Success Clients</Button>
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <About1 />
-      <br></br>
-      <br></br>
-      <br></br>
-      <hr></hr>
-      <br></br>
-      <br></br>
-      <br></br>
+
       <div className="container">
         <header className="text-center margin-bottom-60">
+          <br></br>
+          <br></br>
+          <br></br>
+          <p class="lead font-lato">Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to providing high-quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-car+online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is always available. Upon successful completion of the course, the graduates will qualify for the Driver's Licence History.
+          </p>
+          <br></br>
+          <p class="lead font-lato">
+            The Driver's Licence History provides proof of successful completion of, and graduation from our BDE course and it is widely recognized by the insurance industry. BDE graduates with a Driver's Licence History may be eligible for an insurance discount.
+          </p>
+          <br></br>
+          <br></br>
+          <br></br>
           <h2>Reasons Why YOU Should Join Us</h2>
-          <p>
+          <p class="lead font-lato">
             Max's Driving School is one of the most respected driving schools in
             Kitchener. Our unique approach to teaching, one-of-a-kind teaching
             techniques, and efficient program structures make Pioneer Driving
             School an excellent choice for new drivers in Kitchener, Waterloo,
             and Cambridge.
           </p>
+
         </header>
         <div className="row">
           <div className="col-md-6 col-xs-12">
@@ -118,23 +117,17 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
-      <hr></hr>
-      <div className="container">
-        <br></br>
-        <br></br>
-        <br></br>
-        <h2>
-          <a href="mailto:webmaster@example.com">Book Your Road Test</a>
-        </h2>
-
-        <br></br>
-        <br></br>
-        <br></br>
-      </div>
-      <br></br>
-      <hr></hr>
-      <br></br>
       <Reviews />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h2>
+        <a href="mailto:webmaster@example.com">Book Your Road Test</a>
+      </h2>
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 };
