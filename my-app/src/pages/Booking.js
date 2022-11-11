@@ -24,7 +24,7 @@ const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
     ),
   };
 });
-function validate(name, number, pkg, g1) {
+function validate(name, number, pkg, g1, date) {
   const errors = [];
 
   if (name.length === 0) {
@@ -47,6 +47,9 @@ function validate(name, number, pkg, g1) {
   }
   if (g1 === 'No') {
     errors.push('Please pass G1 first');
+  }
+  if (date.length === 0) {
+    errors.push('Please enter a valid date');
   }
 
   return errors;
@@ -89,7 +92,7 @@ export default class SignUpForm extends React.Component {
     e.preventDefault();
 
     const { name, number, pkg, g1, date } = this.state;
-    const errors = validate(name, number, pkg, g1);
+    const errors = validate(name, number, pkg, g1, date);
     if (errors.length > 0) {
       this.setState({ errors });
       <p key={errors}>Error: {errors}</p>
