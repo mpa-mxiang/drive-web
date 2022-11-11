@@ -86,7 +86,7 @@ const Reviews = () => {
   return (
     <Container>
       <div className="review-box">
-        <h1>Reviews</h1>
+        <h1>What our students say</h1>
         <NewCard />
       </div>
     </Container>
