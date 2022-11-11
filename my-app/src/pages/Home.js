@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import HeaderBanner from './Banner/HeaderBanner';
 import './Home.css';
 import Reviews from '../pages/Reviews/Reviews';
+import ministryOfTransportation from '../images/ontario_ministry_of_transportation.png';
+import bdeCourse from '../images/bde-course.png';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -64,17 +66,22 @@ const Home = () => {
           <br></br>
           <br></br>
           <br></br>
-          <p class="lead font-lato">Are you looking for a driving school in Kitchener-Waterloo area? Are you a student in Waterloo looking for a driving school? Max's Driving School is the answer. We provide the best driving education in Kitchener-Waterloo area.
+          <p class="lead font-lato">
+            Are you looking for a driving school in Kitchener-Waterloo area? Are
+            you a student in Waterloo looking for a driving school? Max's
+            Driving School is the answer. We provide the best driving education
+            in Kitchener-Waterloo area.
           </p>
           <br></br>
           <p class="lead font-lato">
-            Max is here to maximize your experience of driving!
-            No driving before? No problem!
-            We are here to help you to get confidence for driving!
+            Max is here to maximize your experience of driving! No driving
+            before? No problem! We are here to help you to get confidence for
+            driving!
           </p>
           <br></br>
           <p class="lead font-lato">
-            We are taking pride for the high rates of our graduates on the road and a high success rates of passing their road tests first time.
+            We are taking pride for the high rates of our graduates on the road
+            and a high success rates of passing their road tests first time.
           </p>
           <br></br>
           <br></br>
@@ -87,7 +94,6 @@ const Home = () => {
             School an excellent choice for new drivers in Kitchener, Waterloo,
             and Cambridge.
           </p>
-
         </header>
         <div className="row">
           <div className="col-md-6 col-xs-12">
@@ -131,6 +137,11 @@ const Home = () => {
         <a href="mailto:webmaster@example.com">Book Your Road Test</a>
       </h2>
       <br></br>
+      <br></br>
+      <div className='bottom-images'>
+        <img src={bdeCourse} alt="" />
+        <img src={ministryOfTransportation} alt="" />
+      </div>
       <br></br>
       <br></br>
     </div>
