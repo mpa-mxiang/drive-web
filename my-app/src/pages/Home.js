@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import HeaderBanner from './Banner/HeaderBanner';
 import './Home.css';
-import About1 from '../pages/About/About1';
+import bde from '../images/bde-course.png';
 import Reviews from '../pages/Reviews/Reviews';
 
 const Home = () => {
@@ -65,11 +65,17 @@ const Home = () => {
           <br></br>
           <br></br>
           <br></br>
-          <p class="lead font-lato">Max's Driving School is one of the most respected schools in the KW area. Max's Driving School is committed to providing high-quality service of safe and defensive driving education for all ages in the KW and Cambridge area. Our 40-hour in-car+online, Ministry of Transportation Approved Beginner Driver Education (BDE) course is always available. Upon successful completion of the course, the graduates will qualify for the Driver's Licence History.
+          <p class="lead font-lato">Are you looking for a driving school in Kitchener-Waterloo area? Are you a student in Waterloo looking for a driving school? Max's Driving School is the answer. We provide the best driving education in Kitchener-Waterloo area.
           </p>
           <br></br>
           <p class="lead font-lato">
-            The Driver's Licence History provides proof of successful completion of, and graduation from our BDE course and it is widely recognized by the insurance industry. BDE graduates with a Driver's Licence History may be eligible for an insurance discount.
+            Max is here to maximize your experience of driving!
+            No driving before? No problem!
+            We are here to help you to get confidence for driving!
+          </p>
+          <br></br>
+          <p class="lead font-lato">
+            We are taking pride for the high rates of our graduates on the road and a high success rates of passing their road tests first time.
           </p>
           <br></br>
           <br></br>
