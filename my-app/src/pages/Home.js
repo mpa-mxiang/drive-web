@@ -3,7 +3,6 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import HeaderBanner from './Banner/HeaderBanner';
 import './Home.css';
-import bde from '../images/bde-course.png';
 import Reviews from '../pages/Reviews/Reviews';
 
 const Home = () => {
