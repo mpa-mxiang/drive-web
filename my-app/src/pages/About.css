@@ -48,12 +48,12 @@ a {
   width: 50%;
 }
 .section-container .columns.image {
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .section-container .columns.content .content-container {
-  padding: 100px 100px;
+  padding: 150px 150px;
 }
 .section-container .columns.content .content-container h5 {
   font-weight: 700;
