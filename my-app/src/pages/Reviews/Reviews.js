@@ -85,9 +85,11 @@ let NewCard = () => {
 const Reviews = () => {
   return (
     <Container>
-      <div className="review-box">
-        <h1>What our students say</h1>
-        <NewCard />
+      <div className="p-0 box my-0 text-center">
+        <div className="review-box">
+          <h1>Testimonials</h1>
+          <NewCard />
+        </div>
       </div>
     </Container>
   );

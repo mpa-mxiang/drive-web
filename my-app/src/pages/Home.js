@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import HeaderBanner from './Banner/HeaderBanner';
 import './Home.css';
-import Reviews from '../pages/Reviews/Reviews';
+
 import ministryOfTransportation from '../images/ontario_ministry_of_transportation.png';
 import bdeCourse from '../images/bde-course.png';
 
@@ -128,7 +128,6 @@ const Home = () => {
       <br></br>
       <br></br>
       <br></br>
-      <Reviews />
       <br></br>
       <br></br>
       <br></br>
