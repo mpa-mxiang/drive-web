@@ -53,7 +53,7 @@ a {
   background-size: cover;
 }
 .section-container .columns.content .content-container {
-  padding: 150px 150px;
+  padding: 150px 200px;
 }
 .section-container .columns.content .content-container h5 {
   font-weight: 700;
@@ -62,7 +62,7 @@ a {
 }
 .section-container .columns.content .content-container p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
   margin-bottom: 15px;
   text-align: justify;

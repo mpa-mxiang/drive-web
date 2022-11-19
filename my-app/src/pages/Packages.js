@@ -2,10 +2,33 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { HiCheckCircle, HiXCircle } from 'react-icons/hi';
 import './Packages.css';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Stack from '@mui/material/Stack';
+import Link from '@mui/material/Link';
+
+const breadcrumbs = [
+  <Link underline="hover" key="1" color="inherit" href="/">
+    Home
+  </Link>,
+  <Link underline="hover" key="2" color="inherit" href="/about">
+    Packages
+  </Link>,
+];
 
 const Packages = () => {
   return (
     <div>
+      <div className="p-4 text-center">
+        <Stack>
+          <Breadcrumbs
+            separator={<NavigateNextIcon fontSize="small" />}
+            aria-label="breadcrumb"
+          >
+            {breadcrumbs}
+          </Breadcrumbs>
+        </Stack>
+      </div>
       <br></br>
       <Table responsive="sm">
         <thead>

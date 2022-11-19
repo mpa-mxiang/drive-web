@@ -3,6 +3,20 @@ import './Booking.css';
 import { ScheduleMeeting } from 'react-schedule-meeting';
 import { format } from 'date-fns';
 import validator from 'validator';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Stack from '@mui/material/Stack';
+import Link from '@mui/material/Link';
+
+const breadcrumbs = [
+  <Link underline="hover" key="1" color="inherit" href="/">
+    Home
+  </Link>,
+  <Link underline="hover" key="2" color="inherit" href="/about">
+    Booking
+  </Link>,
+];
+
 const availableTimeslots = [0, 1, 2, 3, 4, 5].map(id => {
   return {
     id,
@@ -72,7 +86,6 @@ function notify(name, number, thisMessage, date) {
     });
 }
 
-
 export default class SignUpForm extends React.Component {
   constructor() {
     super();
@@ -95,117 +108,144 @@ export default class SignUpForm extends React.Component {
     const errors = validate(name, number, pkg, g1, date);
     if (errors.length > 0) {
       this.setState({ errors });
-      <p key={errors}>Error: {errors}</p>
-
+      <p key={errors}>Error: {errors}</p>;
     }
     // submit the data...
     else {
-      notify(name, number, 'This is the confirmation for your booking on ', date);
+      notify(
+        name,
+        number,
+        'This is the confirmation for your booking on ',
+        date
+      );
     }
-    return
-
-
-  }
-
-  handleDate = (startTimeEventEmit) => {
-    this.setState({ date: format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a') });
     return;
   }
+
+  handleDate = startTimeEventEmit => {
+    this.setState({
+      date: format(startTimeEventEmit.startTime, 'cccc, LLLL do h:mm a'),
+    });
+    return;
+  };
   render() {
     const { errors } = this.state;
     return (
-      <div className="Booking">
-        <ScheduleMeeting
-          borderRadius={10}
-          primaryColor="#3f5b85"
-          eventDurationInMinutes={120}
-          eventStartTimeSpreadInMinutes={0}
-          availableTimeslots={availableTimeslots}
-          onStartTimeSelect={this.handleDate}
-          onNoFutureTimesAvailable={console.log}
-        />
-        <div className="center">
-          <form onSubmit={this.handleSubmit}>
-            <div className="center">
-              <label>
-                Name:
-                <input
-                  value={this.state.name}
-                  onChange={evt => this.setState({ name: evt.target.value })}
-                  type="text"
-                  placeholder="Name"
-                />
-              </label>
-              <label>
-                Phone Number:
-                <input
-                  value={this.state.number}
-                  onChange={evt => this.setState({ number: evt.target.value })}
-                  type="text"
-                  placeholder="Phone number"
-                />
-              </label>
-            </div>
-            <p>Did you pass G1?</p>
-            <div className="center" onChange={evt => this.setState({ g1: evt.target.value })}>
-              <input
-                value="Yes"
+      <div className="p-4 text-center">
+        <Stack>
+          <Breadcrumbs
+            separator={<NavigateNextIcon fontSize="small" />}
+            aria-label="breadcrumb"
+          >
+            {breadcrumbs}
+          </Breadcrumbs>
+        </Stack>
+        <div className="Booking">
+          <ScheduleMeeting
+            borderRadius={10}
+            primaryColor="#3f5b85"
+            eventDurationInMinutes={120}
+            eventStartTimeSpreadInMinutes={0}
+            availableTimeslots={availableTimeslots}
+            onStartTimeSelect={this.handleDate}
+            onNoFutureTimesAvailable={console.log}
+          />
+          <div className="center">
+            <form onSubmit={this.handleSubmit}>
+              <div className="center">
+                <label>
+                  Name:
+                  <input
+                    value={this.state.name}
+                    onChange={evt => this.setState({ name: evt.target.value })}
+                    type="text"
+                    placeholder="Name"
+                  />
+                </label>
+                <label>
+                  Phone Number:
+                  <input
+                    value={this.state.number}
+                    onChange={evt =>
+                      this.setState({ number: evt.target.value })
+                    }
+                    type="text"
+                    placeholder="Phone number"
+                  />
+                </label>
+              </div>
+              <p>Did you pass G1?</p>
+              <div
+                className="center"
                 onChange={evt => this.setState({ g1: evt.target.value })}
-                type="radio"
-                placeholder="g1"
-                id="Yes"
-                name="Yes"
-                checked={this.state.g1 === 'Yes'}
-              />Yes
-              <input
-                value="No"
-                onChange={evt => this.setState({ g1: evt.target.value })}
-                type="radio"
-                placeholder="g1"
-                id="No"
-                name="No"
-                checked={this.state.g1 === 'No'}
-              />No
-            </div>
-            <p>Choose your package:</p>
+              >
+                <input
+                  value="Yes"
+                  onChange={evt => this.setState({ g1: evt.target.value })}
+                  type="radio"
+                  placeholder="g1"
+                  id="Yes"
+                  name="Yes"
+                  checked={this.state.g1 === 'Yes'}
+                />
+                Yes
+                <input
+                  value="No"
+                  onChange={evt => this.setState({ g1: evt.target.value })}
+                  type="radio"
+                  placeholder="g1"
+                  id="No"
+                  name="No"
+                  checked={this.state.g1 === 'No'}
+                />
+                No
+              </div>
+              <p>Choose your package:</p>
 
-            <div className="center" onChange={evt => this.setState({ pkg: evt.target.value })}>
-              <br></br>
-              <input
-                value="Bronze"
-                type="radio"
-                placeholder="Pkg"
-                id="Bronze"
-                name="Bronze"
-                checked={this.state.pkg === 'Bronze'}
-              />Bronze
-              <input
-                value="Sliver"
-                type="radio"
-                placeholder="Pkg"
-                id="Sliver"
-                name="Sliver"
-                checked={this.state.pkg === 'Sliver'}
-              />Sliver
-            </div>
+              <div
+                className="center"
+                onChange={evt => this.setState({ pkg: evt.target.value })}
+              >
+                <br></br>
+                <input
+                  value="Bronze"
+                  type="radio"
+                  placeholder="Pkg"
+                  id="Bronze"
+                  name="Bronze"
+                  checked={this.state.pkg === 'Bronze'}
+                />
+                Bronze
+                <input
+                  value="Sliver"
+                  type="radio"
+                  placeholder="Pkg"
+                  id="Sliver"
+                  name="Sliver"
+                  checked={this.state.pkg === 'Sliver'}
+                />
+                Sliver
+              </div>
 
-
-            <p>Info confirmation:</p>
-            <p>Your name is {this.state.name}, your number is {this.state.number}, you selected {this.state.date} with {this.state.pkg}</p>
-            <div className="center">
-              <button type="submit" onClick={this.handleSubmit}>
-                Submit
-              </button>
-
-            </div>
-            {errors.map(error => (
-              <p key={error}>Error: {error}</p>
-            ))}
-          </form>
-        </div >
-        <br></br>
-      </div >
+              <p>Info confirmation:</p>
+              <p>
+                Your name is {this.state.name}, your number is{' '}
+                {this.state.number}, you selected {this.state.date} with{' '}
+                {this.state.pkg}
+              </p>
+              <div className="center">
+                <button type="submit" onClick={this.handleSubmit}>
+                  Submit
+                </button>
+              </div>
+              {errors.map(error => (
+                <p key={error}>Error: {error}</p>
+              ))}
+            </form>
+          </div>
+          <br></br>
+        </div>
+      </div>
     );
   }
 }
-
