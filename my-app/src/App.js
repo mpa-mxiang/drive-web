@@ -6,12 +6,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Home from './pages/Home';
 //import HeaderBar from "./HeaderBar";
-import Navbar from './components/Navbar/Index';
+import Navbar from './components/Navbar/index';
 import About from './pages/About/About';
 import Clients from './pages/Clients';
 import Packages from './pages/Packages';
 import Footer from './pages/Footer/Footer';
-import Reviews from './pages/Reviews/Reviews';
+
 
 function App() {
   return (
@@ -25,7 +25,6 @@ function App() {
           <Route path="/clients" element={<Clients />} />
           <Route path="/packages" element={<Packages />} />
         </Routes>
-        <Reviews />
         <Footer />
       </Router>
     </div>

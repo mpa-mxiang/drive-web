@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import HeaderBanner from './Banner/HeaderBanner';
+import Reviews from '../pages/Reviews/Reviews';
+
 import './Home.css';
 
 import ministryOfTransportation from '../images/ontario_ministry_of_transportation.png';
@@ -142,6 +144,7 @@ const Home = () => {
         <img src={ministryOfTransportation} alt="" />
       </div>
       <br></br>
+      <Reviews />
       <br></br>
     </div>
   );
