@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/drive-web/static/css/main.ac3cfbe3.css",
-    "main.js": "/drive-web/static/js/main.59a4afad.js",
-    "static/media/homepage2.jpg": "/drive-web/static/media/homepage2.c3f87f61b096ecca55f4.jpg",
-    "static/media/bde-course.png": "/drive-web/static/media/bde-course.dd4f07be1778ea58e5ce.png",
-    "static/media/client2.jpg": "/drive-web/static/media/client2.5055cc9287c2ac671d9e.jpg",
-    "static/media/self.jpg": "/drive-web/static/media/self.81645c4094f38447c325.jpg",
-    "static/media/intro.jpg": "/drive-web/static/media/intro.28ff7b24420ec39f3c48.jpg",
-    "static/media/client1.jpg": "/drive-web/static/media/client1.b9f438e06b56726ca631.jpg",
-    "index.html": "/drive-web/index.html",
-    "main.ac3cfbe3.css.map": "/drive-web/static/css/main.ac3cfbe3.css.map",
-    "main.59a4afad.js.map": "/drive-web/static/js/main.59a4afad.js.map"
+    "main.css": "/drive-web/my-app/static/css/main.b03197e8.css",
+    "main.js": "/drive-web/my-app/static/js/main.8a691885.js",
+    "static/media/homepage2.jpg": "/drive-web/my-app/static/media/homepage2.c3f87f61b096ecca55f4.jpg",
+    "static/media/bde-course.png": "/drive-web/my-app/static/media/bde-course.dd4f07be1778ea58e5ce.png",
+    "static/media/client2.jpg": "/drive-web/my-app/static/media/client2.5055cc9287c2ac671d9e.jpg",
+    "static/media/self.jpg": "/drive-web/my-app/static/media/self.81645c4094f38447c325.jpg",
+    "static/media/intro.jpg": "/drive-web/my-app/static/media/intro.28ff7b24420ec39f3c48.jpg",
+    "static/media/client1.jpg": "/drive-web/my-app/static/media/client1.b9f438e06b56726ca631.jpg",
+    "index.html": "/drive-web/my-app/index.html",
+    "main.b03197e8.css.map": "/drive-web/my-app/static/css/main.b03197e8.css.map",
+    "main.8a691885.js.map": "/drive-web/my-app/static/js/main.8a691885.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac3cfbe3.css",
-    "static/js/main.59a4afad.js"
+    "static/css/main.b03197e8.css",
+    "static/js/main.8a691885.js"
   ]
 }
