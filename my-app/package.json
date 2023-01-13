@@ -1,4 +1,5 @@
 {
+  "homepage": "http://https-github-com-mpa-mxiang.github.io/drive-web",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -60,6 +61,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -71,7 +74,8 @@
     ]
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^11.0.2"
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "gh-pages": "^4.0.0"
   },
   "browserslist": {
     "production": [
