@@ -1,0 +1,17 @@
+.review-box {
+  padding: 20px 0;
+  font-family: 'Metropolis', sans-serif;
+  text-rendering: auto;
+}
+.reviews-img {
+  height: auto;
+  max-height: 65px;
+  width: auto;
+  max-width: 65px;
+}
+.info-box {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
