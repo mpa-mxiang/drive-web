@@ -96,7 +96,7 @@ You can deploy this project using VS Code terminal with using related command.
 
 👤 ** Michael Lam **
 - GitHub: https://github.com/s03018296
-
+- LinkedIn: https://www.linkedin.com/in/pakheilammichael/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
