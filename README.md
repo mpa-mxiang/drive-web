@@ -24,9 +24,9 @@
 - [📝 License](#license)
 
 
-# 📖 **Personal-Profolio** <a name="about-project"></a>
+# 📖 **drive-web** <a name="about-project"></a>
 
-**Personal-Profolio. Jiachun Xiang** In this project, I used the tools like linter, HTML/CSS I learned from provided tutorial to build the toolbar and the headline section for my personal profolio. Also, a Figma template is used.
+**Drive-web. Jiachun Xiang** In this project, React, Bootstrap, email API, etc to build a website for Max's Driving school.
 
 
 ## 🛠 Built With <a name="VS Code">VS Code</a>
@@ -47,7 +47,7 @@ GitHub/Git, VS Code, React, Boostrap
 ### Future Features <a name="future-features"></a>
 
 - Mobile version
-- Decorated form 
+- Redecoration form 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,7 +75,7 @@ Clone this repository to your desired folder in your laptop:
 
 ### Usage
 
-To open the project, use yout prefered explorer and open the index.html file. Or, you can right click the index.html file to open in the live server with the localhost.
+To open the project, use 'npm run' to see the project.
 
 
 ### Deployment
